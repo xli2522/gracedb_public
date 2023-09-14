@@ -1,10 +1,14 @@
 # X. Li 2023
 # short demo
+import json 
+import time 
+import os
 from gracedb_public.grace_configurations import Grace_config
 from gracedb_public.local_configurations import Local_config
 from dynamic.cache import _append_local_json
 from dynamic.util import removedir
-import os
+from dynamic.parse import parse_dict
+
 client = Grace_config()
 
 # show basic info
@@ -16,7 +20,7 @@ print('Local cache path: ', client.get_cache_address(), '\n',
     'Local _temp path: ', client.get_temp_address())
 
 # do not send too many requests; use responsibly
-send_server_request = True
+send_server_request = False
 if send_server_request:
     # clear the local cached events
     try:
@@ -33,5 +37,12 @@ if send_server_request:
 
 # initialize local configurations
 local = Local_config()
-local_content = local.get_myLocalDB()[client._get_superevents()]
-# print(local_content)
+local_content = local.get_myLocalDB()   #[client._get_superevents()]
+# the local database is loaded in dictionary format
+
+# parse the database dictionary and print a summary of the dictionary
+levels = [client._get_superevents(), 'links']
+dbProperty = parse_dict(local_content, 
+                    levels=levels, 
+                    event_key_all=False)
+print(json.dumps(dbProperty, indent=4))
