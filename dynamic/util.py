@@ -43,13 +43,11 @@ def cleardir(path):
         if os.path.exists(path):
             for f in os.listdir(path):
                 os.remove(os.path.join(path, f))
-        else: pass
     elif isinstance(path, (list, tuple)):
         for i in path:
             if os.path.exists(i):
                 for f in os.listdir(path):
                     os.remove(os.path.join(path, f))
-        else: pass
     else: 
         raise TypeError('Only str, list, and tuple are allowed')
     return
