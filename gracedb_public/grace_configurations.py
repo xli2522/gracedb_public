@@ -10,6 +10,7 @@ from gracedb_public.shared_configurations import Config
 from gracedb_public.local_configurations import Local_config
 from dynamic.cache import cache_json, _append_local_json
 from dynamic.util import re_punctuation, fixdir, removedir
+from dynamic.parse import parse_dict
 
 class Grace_config(Config):
     '''Communicate with GraceDB for updated information'''

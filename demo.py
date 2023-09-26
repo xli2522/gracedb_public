@@ -1,14 +1,14 @@
 # X. Li 2023
 # short demo
 import json 
-import time 
-import os
 from gracedb_public.grace_configurations import Grace_config
 from gracedb_public.local_configurations import Local_config
 from dynamic.cache import _append_local_json
 from dynamic.util import removedir
 from dynamic.parse import parse_dict
+from dynamic.process import get_response_dict, get_file
 
+import os
 client = Grace_config()
 
 # show basic info
@@ -46,3 +46,16 @@ dbProperty = parse_dict(local_content,
                     levels=levels, 
                     event_key_all=False)
 print(json.dumps(dbProperty, indent=4))
+
+# check the file link of the first superevent in the local database
+file_link = local_content[levels[0]][0][levels[1]]['files']
+print(file_link)
+
+# dictionary of files available
+files_list = get_response_dict(file_link, 
+            cache_dir='/'.join([client.get_cache_address(), 'files']))
+print(json.dumps(files_list, indent=4))
+
+# save the bayestar.multiorder.fits,1 file
+get_file(files_list['bayestar.multiorder.fits,1'], 
+            cache_dir='/'.join([client.get_cache_address(), 'files']))
