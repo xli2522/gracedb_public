@@ -14,10 +14,8 @@ class Local_config(Config):
         if myLocalDB is not None:
             self.myLocalDb = myLocalDB
         else:
-            
             try:
                 with open(self.localDB_path,'r') as f:
-                    
                     self.myLocalDb = json.load(f)
             except:
                 print('No local superevent cache in',self.localDB_path)
