@@ -5,7 +5,10 @@ import time
 import os
 import pandas as pd
 
+from dynamic.logging import logging
+
 # default json indentation = 4
+@logging
 def cache_json(content, parent_path, title):
     '''store content in cache parent_path with title'''
     with open('/'.join([parent_path, title]),'w') as out:
@@ -33,6 +36,7 @@ def _append_local_json(content_path, target_path, index):
         raise Warning('Conditions went wrong.. Will fix..')
     return
 
+@logging
 def cache_file(content, parent_path, title):
     '''store file in cache parent_path with title'''
     open('/'.join([parent_path, title]), 'wb').write(content.content)

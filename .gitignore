@@ -1,7 +1,8 @@
 # gracedb_public dev specific
 _dev_test/
 _temp/
-
+_log/
+cached_events/files/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

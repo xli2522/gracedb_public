@@ -1,6 +1,5 @@
 # X. Li 2023
 import json
-import time
 from dynamic.util import fixdir
 
 class Config():
@@ -12,12 +11,14 @@ class Config():
     def __init__(self):
         self.cache_address = 'cached_events'
         self._temp_address = '_temp'
+        self._log_address = '_log'
 
         self._re_local_dir()
 
     def _re_local_dir(self):
         # refresh local directories
-        fixdir([self.cache_address, self._temp_address])
+        dirs = [self.cache_address, self._temp_address, self._log_address]
+        fixdir(dirs)
 
     # getter
     # ::user getter
@@ -27,6 +28,9 @@ class Config():
     def get_temp_address(self):
         return self._temp_address
 
+    def get_log_address(self):
+        return self._log_address
+
     # setter
     # ::user setter
     def set_cache_address(self, alt_cache):
@@ -34,3 +38,6 @@ class Config():
     
     def set_temp_address(self, alt_temp):
         self._temp_address = alt_temp; self._re_local_dir()
+    
+    def set_log_address(self, alt_log):
+        self._log_address = alt_log; self._re_local_dir()

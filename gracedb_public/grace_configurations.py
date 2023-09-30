@@ -11,6 +11,7 @@ from gracedb_public.local_configurations import Local_config
 from dynamic.cache import cache_json, _append_local_json
 from dynamic.util import re_punctuation, fixdir, removedir
 from dynamic.parse import parse_dict
+from dynamic.logging import logging
 
 class Grace_config(Config):
     '''Communicate with GraceDB for updated information'''
@@ -76,6 +77,7 @@ class Grace_config(Config):
     # all variables refering to properties of the gracedb server daatabase
     # if not specified otherwise
 
+    @logging
     def get_superevents_count(self):
         '''get the superevents total count by making one superevents request'''
         # Method 1:
@@ -95,6 +97,7 @@ class Grace_config(Config):
         return int(float(superevents_count))
     
     # NOTE: [FEATURE] sleep dec?
+    @logging
     def update_superevents(self, start=None, count=None, wait_t=0):
         '''get updated superevents information from gracedb server'''
         max_count = self.get_superevents_count()

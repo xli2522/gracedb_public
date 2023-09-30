@@ -12,7 +12,7 @@ Make as few requests to GraceDB as possible. Store server response in local cach
 
 - GraceDB-public
     - gracedb_public
-
+    
         grace_configurations.py
         
         shared_configurations.py
@@ -27,9 +27,9 @@ Make as few requests to GraceDB as possible. Store server response in local cach
         
         util.py
         
-        ~~log.py~~
+        logging.py
         
-    - ~~\log~~
+    - _log
         
         
     - ~~\test~~

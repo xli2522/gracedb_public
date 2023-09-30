@@ -6,7 +6,9 @@ import shutil
 
 def re_punctuation():
     '''return the translation method with all punctuations removed'''
-    return str.maketrans('', '', string.punctuation)
+    # string.punctuation -> r"""!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"""
+    # keep '.' for file extension
+    return str.maketrans('', '', r"""!"#$%&'()*+,-/:;<=>?@[\]^_`{|}~""")
 
 def fixdir(path):
     ''' create path if not already
