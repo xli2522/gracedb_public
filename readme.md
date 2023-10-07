@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The GraceDB Official Client requires member authentications for many functions. The GraceDB-public package uses the official GraceDB API to communicate with the public portion of the database, which is sufficient for most non-member users. The GraceDB-public package is part of the Gravitational Wave SkyMap Stellarium plug-in project. It is used in collecting the list of GraceDB ‘Superevents’ and skymaps attached to them.
+The GraceDB Official Client necessitates member authentications for various functions. The GraceDB-public package uses the official GraceDB API to interact with the public segment of the database. The GraceDB-public package is part of the Gravitational Wave SkyMap Stellarium plug-in project. It facilitates tasks such as collecting the list of GraceDB ‘Superevents’ and skymaps attached to them.
 
 ## Philosophy
 

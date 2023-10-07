@@ -1,9 +1,6 @@
 # X. Li 2023
-import requests
 import json
-import time
 import os
-import pandas as pd
 
 from dynamic.logging import logging
 
