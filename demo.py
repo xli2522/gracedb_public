@@ -1,12 +1,15 @@
 # X. Li 2023
 # short demo
 import json 
+import gracedb_public
+
+from gracedb_public import dynamic
 from gracedb_public.grace_configurations import Grace_config
 from gracedb_public.local_configurations import Local_config
-from dynamic.cache import _append_local_json
-from dynamic.util import removedir
-from dynamic.parse import parse_dict
-from dynamic.process import get_response_dict, get_file
+from gracedb_public.dynamic.cache import _append_local_json
+from gracedb_public.dynamic.util import removedir
+from gracedb_public.dynamic.parse import parse_dict
+from gracedb_public.dynamic.process import get_response_dict, get_file
 
 import os
 client = Grace_config()
@@ -16,8 +19,8 @@ print('Server address: ', client.get_server(), '\n',
     'Current graceid: ', client.get_graceid(), '\n',
     'Current file path: ', client.get_manual_path())
 
-print('Local cache path: ', client.get_cache_address(), '\n', 
-    'Local _temp path: ', client.get_temp_address())
+print('Local cache path: ', client._get_cache_address(), '\n', 
+    'Local _temp path: ', client._get_temp_address())
 
 # do not send too many requests; use responsibly
 send_server_request = False
@@ -53,9 +56,9 @@ print(file_link)
 
 # dictionary of files available
 files_list = get_response_dict(file_link, 
-            cache_dir='/'.join([client.get_cache_address(), 'files']))
+            cache_dir='/'.join([client._get_cache_address(), 'files']))
 print(json.dumps(files_list, indent=4))
 
 # save the bayestar.multiorder.fits,1 file
 get_file(files_list['bayestar.multiorder.fits,1'], 
-            cache_dir='/'.join([client.get_cache_address(), 'files']))
+            cache_dir='/'.join([client._get_cache_address(), 'files']))

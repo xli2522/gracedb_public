@@ -1,6 +1,8 @@
 # X. Li 2023
 
-def parse_dict(dict, levels=['superevents','links'], event_key_all=False):
+def parse_dict( dict   : dict[str, str],
+                levels : list[str] = ['superevents','links'], 
+                event_key_all : bool = False) -> dict:
     '''parse the superevents json dictionary for information structure'''
     L1 = list(dict.keys())
     # expect ['numRows', 'superevents', 'links']

@@ -1,14 +1,15 @@
 # X. Li 2023
 import requests
+import json
 
-from dynamic.util import re_punctuation, fixdir
-from dynamic.cache import cache_json, cache_file
-from dynamic.logging import logging
+from gracedb_public.dynamic.util import re_punctuation, fixdir
+from gracedb_public.dynamic.cache import cache_json, cache_file
+from gracedb_public.dynamic.logging import logging
 
 @logging
-def get_response_dict(url, cache_dir=None):
+def get_response_dict(url : str, cache_dir : str = None) -> dict:
     '''A wrapper for request.get() and saves the response in local directory.'''
-    files_list = requests.get(url).json()
+    files_list : dict = requests.get(url).json()
 
     # cache data
     if cache_dir is not None:
@@ -19,10 +20,10 @@ def get_response_dict(url, cache_dir=None):
     return files_list
 
 @logging
-def get_file(url, cache_dir=None):
+def get_file(url : str, cache_dir : str = None) -> str:
     '''A wrapper for request.get() and saves the file in local directory'''
-    file_content = requests.get(url)
-    file_title = url.translate(re_punctuation())
+    file_content    : json = requests.get(url)
+    file_title      : str = url.translate(re_punctuation())
     
     # cache data
     if cache_dir is not None:

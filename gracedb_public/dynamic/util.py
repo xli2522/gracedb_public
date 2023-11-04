@@ -3,13 +3,13 @@ import string
 import os
 import shutil
 
-def re_punctuation():
+def re_punctuation() -> str:
     '''return the translation method with all punctuations removed'''
     # string.punctuation -> r"""!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"""
     # keep '.' for file extension
     return str.maketrans('', '', r"""!"#$%&'()*+,-/:;<=>?@[\]^_`{|}~""")
 
-def fixdir(path):
+def fixdir(path : [str, list]) -> None:
     ''' create path if not already
     path: tuple or list'''
     if isinstance(path, str):
@@ -23,7 +23,7 @@ def fixdir(path):
         raise TypeError('Only str, list, and tuple are allowed')
     return
 
-def removedir(path):
+def removedir(path : [str, list]) -> None:
     ''' remove dir if not already
     path: tuple or list'''
     if isinstance(path, str):
@@ -37,7 +37,7 @@ def removedir(path):
         raise TypeError('Only str, list, and tuple are allowed')
     return
 
-def cleardir(path):
+def cleardir(path : [str, list]) -> None:
     ''' clear dir if not already
     path: tuple or list'''
     if isinstance(path, str):

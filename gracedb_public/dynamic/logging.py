@@ -4,20 +4,18 @@ from datetime import datetime
 import os
 
 from gracedb_public.shared_configurations import Config
-from dynamic.util import fixdir
+from gracedb_public.dynamic.util import fixdir
 
-shared_config = Config()
-
-def logging(func):
+def logging(func : object) -> any:
     @functools.wraps(func)
-    def wrapper(*args, **kwargs):
+    def wrapper(*args, **kwargs) -> any:
         # Log the function name and arguments
-        fixdir(shared_config.get_log_address())
-        file_path = '/'.join([shared_config.get_log_address(), 'log.txt'])
-        mode = 'a'
+        fixdir(Config['_log_address'])
+        file_path : str = '/'.join([Config['_log_address'], 'log.txt'])
+        mode      : str = 'a'
         # limit logging content to 100 char
-        args_short = ' '.join(map(str, args))[:100]
-        kwargs_short = ' '.join(map(str, kwargs))[:100]
+        args_short      : str = ' '.join(map(str, args))[:100]
+        kwargs_short    : str = ' '.join(map(str, kwargs))[:100]
 
         # log function name, time, and inputs
         if not os.path.isfile(file_path): mode = 'w'
@@ -26,6 +24,5 @@ def logging(func):
 args: {args_short}\nkwargs: {kwargs_short}\n')
 
         # Call the original function
-        result = func(*args, **kwargs)
-        return result
+        return func(*args, **kwargs)
     return wrapper
