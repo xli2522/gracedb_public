@@ -11,9 +11,9 @@ Config : dict = {
 def _re_local_dir() -> None:
     # refresh local directories
     dirs : list = [
-                cache_address, 
-                _temp_address, 
-                _log_address
+                Config['cache_address'], 
+                Config['temp_address'], 
+                Config['_log_address']
             ]
     fixdir(dirs)
 
