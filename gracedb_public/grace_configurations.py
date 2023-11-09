@@ -1,5 +1,4 @@
 # X. Li 2023
-
 import requests
 import time
 
@@ -13,13 +12,17 @@ from gracedb_public.dynamic.logging import logging
 
 class Grace_config(Local_config):
     ''' GraceDB database configurations (both server and local)
+        Grace_config --> user and server interactions
+        Grace_config is based on Local_config
+    ---------    
         Initializes local configurations automatically.
-
+    ---------
     Details:
         Server interaction part --> obtain local copies of the database
         Local  interaction part --> access and process data
     '''
     def __init__(self) -> None:
+        super().__init__()
         # ::server interaction settings
         self._offline_mode          : bool = Config['offline_mode']
         self._server                : str  = Config['server']
@@ -29,29 +32,29 @@ class Grace_config(Local_config):
         # determine with https://gracedb.ligo.org/apiweb/
         # publicly accessible api methods only
 
-        # ::local database interaction settings
+        # ::local _log, _temp interaction settings
+        # NOTE: these directory methods were not included in Local_config
+        # as they are not part of the GraceDB database
+         
         # directory names; should not be changed
-        self.files_address : str = Config['files_address']
         self._temp_address  : str = Config['_temp_address']
         self._log_address   : str = Config['_log_address']
-        
-        # ::database parsing related; do not change
-        self._superevents_key   : str = Config['superevents']
-        self._links_key         : str = Config['links']
-        self._files_key         : str = Config['files']
-                
-        # ::database parsing related; dynacmic - changing all the time
+
+        # ::database parsing related; dynacmic
         self.graceid                : str = '{graceid}'
+        self.ordered_event_id       : int = 0
         self.myFile                 : str = '{myFile}'
-        self.local_inquiry_chunk    : int = 30
-        # primarily used for conserving memory and user dropdown menu
         
         self._re_myFile_path()
 
     def _re_myFile_path(self) -> None:
         '''refresh api path to myFile'''
-        self._myFile_path = '/'.join([self._server, self._superevents_key,
-        self.graceid, self._files_key, self.myFile])
+        self._myFile_path = '/'.join([  self._server, 
+                                        super()._get_superevents_key(),
+                                        self.graceid, 
+                                        super()._get_files_key(), 
+                                        self.myFile]
+                                )
 
 
     # getter
@@ -75,28 +78,16 @@ class Grace_config(Local_config):
 
     # current local file structure directories
     def get_cache_address(self) -> str:
-        '''get current cache_address'''
-        return Local_config()._get_cache_address()
+        '''get current cache_address
+        Wrapper for Local_config internal method _get_cache_address'''
+        return super()._get_cache_address()
     
     def get_files_address(self) -> str:
-        '''get current files_address'''
-        return self.files_address
-    
+        '''get current files_address
+        Wrapper for Local_config internal method _get_files_address'''
+        return super()._get_files_address()
     
     # ::internal getter 
-    # internal database keys
-    def _get_superevents_key(self) -> str:
-        '''get current database superevents key'''
-        return self._superevents_key 
-    
-    def _get_links_key(self) -> str:
-        '''get current database links key'''
-        return self._links_key 
-    
-    def _get_files_key(self) -> str:
-        '''get current database files key'''
-        return self._files_key 
-    
     # internal current local file structure directories
     def _get_temp_address(self) -> str:
         '''get current temp address'''
@@ -116,26 +107,15 @@ class Grace_config(Local_config):
         '''set myFile name/title; refresh file path'''
         self.myFile = alt_title; self._re_myFile_path()
     
-        
     # ::internal setter
     # internal set database key
-    def _set_superevents_key(self, alt_key : str) -> None:
-        '''set sessional superevents key; should not be changed'''
-        self._superevents_key = alt_key; self._re_manual_path()
-        
-    def _set_links_key(self, alt_key : str) -> None:
-        '''set sessional superevents key; should not be changed'''
-        self._links_key = alt_key; self._re_manual_path()
-        
-    def _set_files_key(self, alt_key : str) -> None:
-        '''set sessional files key; should not be changed'''
-        self._files_key = alt_key; self._re_manual_path()
-    
+
     # internal event and file information
     def _set_myFile_path(self, alt_path : str) -> None:
         ''' set temporary path to current file; should not use 
             Will be used when local cache check and update function is enabled.
-            NOTE: updating file path should be done through refresh
+        ---------
+            NOTE:   updating file path should be done through refresh
                     myFile path function not set myFile path.
         '''
         self._myFile_path = alt_path
@@ -170,7 +150,7 @@ class Grace_config(Local_config):
     def server_update_superevents(self, 
                            start  : int = None, 
                            count  : int = None, 
-                           wait_t : [int, float] = 0) -> None:
+                           wait_t : [int, float] = 1) -> None:
         '''get updated superevents information from gracedb server'''
         max_count : int = self.server_get_superevents_count()
         if isinstance(count, (int, float)) and count <= max_count:
@@ -194,7 +174,7 @@ class Grace_config(Local_config):
             for itr_round in tqdm(range(0, inquiry_round), 
                                     desc='Superevents request chunks: '):
                 api_path : str = '/'.join(
-                [self._server, self._superevents_key,
+                [self._server, super()._get_superevents_key(),
                 '?start='+str(start+itr_round*self._server_inquiry_chunk)+ \
                 '&count='+str(self._server_inquiry_chunk)])
                 time.sleep(wait_t)
@@ -207,11 +187,11 @@ class Grace_config(Local_config):
                 _temp_content_path = '/'.join([temp_dir, 
                         api_path.translate(re_punctuation())+'.json'])
                 _append_local_json(_temp_content_path, 
-                                    Local_config().get_localDB_path(), 
-                                    self._superevents_key)
+                                    super().get_localDB_path(), 
+                                    super()._get_superevents_key())
             itr_round+=1
         api_path = '/'.join(
-            [self._server, self._superevents_key,
+            [self._server, super()._get_superevents_key(),
             '?start='+str(start+itr_round*self._server_inquiry_chunk)+ \
             '&count='+str(inquiry_remain)])
         temp_superList = requests.get(api_path).json()
@@ -222,8 +202,49 @@ class Grace_config(Local_config):
         _temp_content_path = '/'.join([temp_dir, 
                 api_path.translate(re_punctuation())+'.json'])
         _append_local_json(_temp_content_path, 
-                            Local_config().get_localDB_path(), 
-                            self._superevents_key)
+                            super().get_localDB_path(), 
+                            super()._get_superevents_key())
         removedir(temp_dir)
 
         return
+    
+    ######################################################################
+    # Database content getters
+    # Wrapper
+    # getter ---------------------------------------------
+    # ::user getter
+    def get_events_list(self, start : int = 0, chunk  : int = 15) -> list:
+        ''' get events list from int(start) to int(start+chunk)
+        ---------
+            Return selected event id list
+        ---------
+            Wrapper for Local_config internal method get_events_list
+        '''
+        return super().get_events_list(start, chunk)
+    
+    def get_event_links_list(self, ordered_event_id : int = 0) -> list:
+        ''' get event links list
+        ---------
+            Return selected list
+        ---------
+            Wrapper for Local_config internal method get_event_links_list
+        '''
+        return super().get_event_links_list(ordered_event_id)
+    
+    def get_event_files_path(self, ordered_event_id : int = 0) -> str:
+        ''' get event files path
+        ---------
+            Return files api path for specified event id.
+        ---------
+            Wrapper for Local_config internal method get_event_files_path
+        '''
+        return super().get_event_files_path(ordered_event_id)
+    
+    def get_event_dict(self, ordered_event_id : int = 0) -> dict:
+        ''' get all event dict content
+        ---------
+            Return full event dictionary content
+        ---------
+            Wrapper for Local_config internal method get_event_dict
+        '''
+        return super().get_event_dict(ordered_event_id)

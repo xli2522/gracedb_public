@@ -38,11 +38,7 @@ if send_server_request:
     client.server_update_superevents(count=50, wait_t=1)
     # get {count} most recent superevents, wait {wait_t} s per request
 
-# initialize local configurations
-local = Local_config()
-local_content = local.get_myLocalDB()   #[client._get_superevents()]
-# the local database is loaded in dictionary format
-
+local_content = client.get_myLocalDB()
 # parse the database dictionary and print a summary of the dictionary
 levels = [client._get_superevents_key(), client._get_links_key()]
 dbProperty = parse_dict(local_content, 
@@ -50,10 +46,18 @@ dbProperty = parse_dict(local_content,
                     event_key_all=False)
 print(json.dumps(dbProperty, indent=4))
 
-# check the file link of the first superevent in the local database
-file_link = local_content[levels[0]][0][levels[1]][client._get_files_key()]
-print(file_link)
+# get the first 5 event ids in the database
+events = client.get_events_list(chunk=5)
+print(events)
 
+# check all links of the first superevent in the local database
+links = client.get_event_links_list()
+print(links)
+
+# check the file link of the first superevent in the local database
+file_link = client.get_event_files_path()
+print(file_link)
+    
 # dictionary of files available
 files_list = get_response_dict(file_link, 
             cache_dir='/'.join([client.get_files_address()]))
