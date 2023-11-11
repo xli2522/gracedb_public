@@ -201,7 +201,7 @@ class Local_config(object):
         ---------
             Return selected event id list
         '''
-        out         : str = []
+        out         : list = []
         selected    : dict = self.myLocalDB[
                                 self._superevents_key][start:start+chunk]
         for i in selected: out.append(i[self._event_id_key])
