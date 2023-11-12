@@ -1,9 +1,5 @@
 # GraceDB-public
 
-Owner: Xiyuan Li
-Verification: Expired
-Tags: Knowledge
-
 ## Introduction
 
 The GraceDB-public package uses the official GraceDB API to communicate with the public portion of the database. The GraceDB-public package is part of the Gravitational Wave SkyMap Stellarium plug-in project. It is used in collecting the list of GraceDB ‘Superevents’ and skymaps attached to them.
