@@ -1,42 +1,47 @@
 # GraceDB-public
 
+Owner: Xiyuan Li
+Verification: Expired
+Tags: Knowledge
+
 ## Introduction
 
-The GraceDB Official Client necessitates member authentications for various functions. The GraceDB-public package uses the official GraceDB API to interact with the public segment of the database. The GraceDB-public package is part of the Gravitational Wave SkyMap Stellarium plug-in project. It facilitates tasks such as collecting the list of GraceDB ‘Superevents’ and skymaps attached to them.
+The GraceDB-public package uses the official GraceDB API to communicate with the public portion of the database. The GraceDB-public package is part of the Gravitational Wave SkyMap Stellarium plug-in project. It is used in collecting the list of GraceDB ‘Superevents’ and skymaps attached to them.
 
-## Philosophy
+## Flow Chart
 
-Make as few requests to GraceDB as possible. Store server response in local cache for future inquires. Make minimal assumptions about the sever response content.
+![Gracedb_public_flowchart.png](Gracedb_public_flowchart.png)
 
 ## Structure
 
-- GraceDB-public
+- GraceDB-Public
     - gracedb_public
-    
-        grace_configurations.py
         
         shared_configurations.py
         
+        grace_configurations.py
+        
         local_configurations.py
-    
-    - dynamic
         
-        ~~parse.py~~
-        
-        cache.py
-        
-        util.py
-        
-        logging.py
-        
-    - _log
-        
-        
-    - ~~\test~~
+        - dynamic
+            
+            cache.py
+            
+            util.py
+            
+            parse.py
+            
+            log.py
+            
+            process.py
+            
     - cached_events
         
         local_superevents.json
         
-        - files
-
-    - ~~_temp~~
+        - ~~files~~
+    - ~~\log~~
+        
+        
+    - ~~\test~~
+    - \~~_temp~~
