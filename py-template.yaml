@@ -1,0 +1,24 @@
+---
+project_name: GraceDB-public
+loglevel: info
+analyses:
+- analysis_name: py check
+  source_directory: ..\gracedb_public
+  only_permit_languages:
+  - py
+  only_permit_file_extensions:
+  - .py
+  file_scan:
+  - number_of_methods
+  - source_lines_of_code
+  - dependency_graph
+  - louvain_modularity
+  - fan_in_out
+  - tfidf
+  export:
+  - directory: ..\gracedb_public
+  - graphml
+  - json
+  - tabular_file
+  - tabular_console_overall
+  - d3

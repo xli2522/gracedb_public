@@ -41,3 +41,6 @@ The GraceDB-public package uses the official GraceDB API to communicate with the
         
     - ~~\test~~
     - \~~_temp~~
+
+    
+![file_structure.png](file_structure.png)
