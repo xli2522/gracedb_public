@@ -15,7 +15,7 @@ from .dynamic.util import fixdir
 Config : dict[str, any] = {
         # ::local file structure
         'cache_address'     :       'cached_events',
-        'files_address'     :       'cached_events/files',
+        'files_address'     :       'files',
         '_temp_address'     :       '_temp',
         '_log_address'      :       '_log',
         
@@ -44,7 +44,7 @@ def _re_local_dir() -> None:
     dirs : list = [
                 Config[ 'cache_address'  ], 
                 Config[ 'files_address'  ], 
-                Config[ 'temp_address'   ], 
+                Config[ '_temp_address'   ], 
                 Config[ '_log_address'   ]
             ]
     fixdir(dirs)

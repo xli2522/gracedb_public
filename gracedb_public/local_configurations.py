@@ -1,6 +1,11 @@
 # X. Li 2023
 import json
-from gracedb_public.shared_configurations import Config
+import warnings
+import os
+
+from gracedb_public.shared_configurations import Config, _re_local_dir
+
+from gracedb_public.dynamic import util
 
 class Local_config(object):
     ''' Local database configurations (the parent of Grace Config).
@@ -34,9 +39,15 @@ class Local_config(object):
         self._links_key             : str = Config['links']
         self._files_key             : str = Config['files']
         
+        # set up local directories
+        _re_local_dir()             # Config function
+        
         # load database content
         self._re_my_localDB()        
-    
+        
+        # other sessional variables
+        self._warn_skips = (os.path.dirname(__file__),)      # for warnings.warn()
+        
     # ::content/path refresh below
     def _re_localDB_path(self) -> None:
         ''' Refresh local database path.
@@ -201,7 +212,7 @@ class Local_config(object):
         ---------
             Return selected event id list
         '''
-        out         : str = []
+        out         : list = []
         selected    : dict = self.myLocalDB[
                                 self._superevents_key][start:start+chunk]
         for i in selected: out.append(i[self._event_id_key])
@@ -239,5 +250,22 @@ class Local_config(object):
     # only responsible for checking local files
     #     return list
 
-                
-                
+    # clean and clear ---------------------------------------------
+    # ::user clear
+    def clear_db_cache(self) -> None:
+        ''' clear all cached databases, use with caution'''
+        warnings.warn('clear all cached databases', 
+                      stacklevel=2)
+        util.removedir(self.cache_address)
+
+    def clear_files(self) -> None:
+        ''' clear all locally stored files, use with caution'''
+        warnings.warn('clear all files',
+                      stacklevel=2)
+        util.removedir(self.files_address)
+        
+    def clear_logs(self) -> None:
+        ''' clear all locally generated logs, use with caution'''
+        warnings.warn('clear all logs',
+                      stacklevel=2)
+        util.removedir(self._log_address)

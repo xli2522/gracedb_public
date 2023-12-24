@@ -1,10 +1,11 @@
 # X. Li 2023
 import requests
 import time
+import warnings
 
 from tqdm import tqdm
 
-from gracedb_public.shared_configurations import Config
+from gracedb_public.shared_configurations import Config, _re_local_dir
 from gracedb_public.local_configurations import Local_config
 from gracedb_public.dynamic.cache import cache_json, _append_local_json
 from gracedb_public.dynamic.util import re_punctuation, fixdir, removedir
@@ -45,6 +46,10 @@ class Grace_config(Local_config):
         self.ordered_event_id       : int = 0
         self.myFile                 : str = '{myFile}'
         
+        # load database content
+        # super()._re_my_localDB()   
+        print('Initial database load status: ', super().get_DB_load_status())
+        
         self._re_myFile_path()
 
     def _re_myFile_path(self) -> None:
@@ -63,6 +68,14 @@ class Grace_config(Local_config):
     def get_server(self) -> str:
         '''reutrn the current server address'''
         return self._server
+    
+    def get_myLocalDB(self) -> dict:
+        '''return local database content
+        Wrapper for Local_cofig internal method get_myLocalDB'''
+        super()._re_my_localDB()        # reload database
+        if not super().get_DB_load_status(): 
+            warnings.warn('Load unsuccessful.', stacklevel=2)
+        return super().get_myLocalDB()
     
     def get_graceid(self) -> str:
         '''return the current event id'''

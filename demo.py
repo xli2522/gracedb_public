@@ -63,6 +63,11 @@ files_list = get_response_dict(file_link,
             cache_dir='/'.join([client.get_files_address()]))
 print(json.dumps(files_list, indent=4))
 
-# save the bayestar.multiorder.fits,1 file
-get_file(files_list['bayestar.multiorder.fits,1'], 
+# save the first file avaliable
+get_file(files_list[str(list(files_list.keys())[0])], 
             cache_dir='/'.join([client.get_files_address()]))
+
+# # clear files, logs, and databases
+# client.clear_files()        # should see a warning message
+# client.clear_logs()         # should see a warning message
+# client.clear_db_cache()     # should see a warning message

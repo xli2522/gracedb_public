@@ -2,7 +2,7 @@
 _dev_test/
 _temp/
 _log/
-cached_events/files/
+cached_events/
 _dev_notes/
 
 # Byte-compiled / optimized / DLL files
