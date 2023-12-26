@@ -35,12 +35,10 @@ The GraceDB-public package uses the official GraceDB API to communicate with the
         
         local_superevents.json
         
-        - ~~files~~
+    - ~~files~~
     - ~~\log~~
-        
-        
     - ~~\test~~
-    - \~~_temp~~
+
 
     
 ![file_structure.png](file_structure.png)
