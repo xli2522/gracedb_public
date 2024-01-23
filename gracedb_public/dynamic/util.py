@@ -52,3 +52,25 @@ def cleardir(path : [str, list]) -> None:
     else: 
         raise TypeError('Only str, list, and tuple are allowed')
     return
+
+def getSize(path : str) -> str:
+    ''' return the size of the file in MB
+    path: str'''
+    size = os.path.getsize(path)
+    size = size / 1024 / 1024
+    return size
+
+def get_dirSize(path : str) -> str:
+    ''' return the size of the directory in MB
+    path: str'''
+    total = 0
+    for dirpath, dirnames, filenames in os.walk(path):
+        for f in filenames:
+            fp = os.path.join(dirpath, f)
+            total += getSize(fp)    # size in MB
+    return total
+
+def getNumberofFiles(path : str) -> int:
+    ''' return the number of files in the directory
+    path: str'''
+    return len(os.listdir(path))

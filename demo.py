@@ -71,3 +71,14 @@ get_file(files_list[str(list(files_list.keys())[0])],
 # client.clear_files()        # should see a warning message
 # client.clear_logs()         # should see a warning message
 # client.clear_db_cache()     # should see a warning message
+
+
+# database statistics
+print('Size of local database: ', client.get_localDB_size())
+print('Number of events in the local database: ', 
+            client.get_localDB_number_of_events())
+
+print('Size of files in the local database: ',  
+            client.get_local_file_size())
+print('Number of files in the local database: ', 
+            client.get_local_number_of_files())
