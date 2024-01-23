@@ -261,3 +261,23 @@ class Grace_config(Local_config):
             Wrapper for Local_config internal method get_event_dict
         '''
         return super().get_event_dict(ordered_event_id)
+    
+    ######################################################################
+    # Database status/statistics getters
+    # localDB getters ---------------------------------------------
+    # ::user getter
+    def get_localDB_size(self) -> str:
+        '''return the size of the local database in MB'''
+        return super().get_localDB_size()
+    
+    def get_local_file_size(self) -> str:
+        '''return the size of the local files in MB'''
+        return super().get_local_file_size()
+    
+    def get_local_number_of_files(self) -> int:
+        '''return the number of files in the local database'''
+        return super().get_local_number_of_files()
+    
+    def get_localDB_number_of_events(self) -> int:
+        '''return the number of events in the local database'''
+        return super().get_localDB_number_of_events()

@@ -269,3 +269,35 @@ class Local_config(object):
         warnings.warn('clear all logs',
                       stacklevel=2)
         util.removedir(self._log_address)
+        
+    # Database status/statistics getters
+    # getter ---------------------------------------------
+    # ::user getter
+    def get_localDB_size(self) -> str:
+        ''' get local database size
+        ---------
+            Return local database size in MB
+        '''
+        return util.getSize(self.localDB_path)
+    
+    def get_local_file_size(self) -> str:
+        ''' get local file size
+        ---------
+            Return local file size in MB
+        '''
+        return util.get_dirSize(self.files_address)
+    
+    def get_local_number_of_files(self) -> int:
+        ''' get local number of files
+        ---------
+            Return local number of files
+        '''
+        return util.getNumberofFiles(self.files_address)
+    
+    def get_localDB_number_of_events(self) -> int:
+        ''' get local number of events
+        ---------
+            Return local number of events
+        '''
+        return len(self.myLocalDB[self._superevents_key])
+    
