@@ -17,7 +17,7 @@ if __name__ == '__main__':
         )
 
     # most probable location
-    i = np.argmax(skymap['PROBDENSITY'])            # find the most probable pixel
+    i = np.argmax(skymap['PROBDENSITY'])        # find the most probable pixel
     # find the UNIQ value of the most probable pixel
     uniq = skymap[i]['UNIQ']    
     # convert the probability density to per square degree
@@ -25,16 +25,16 @@ if __name__ == '__main__':
     # find the level and pixel number of the most probable pixel   
     level, ipix = ah.uniq_to_level_ipix(uniq)                       
     nside = ah.level_to_nside(level)
-    ra_max, dec_max = ah.healpix_to_lonlat(ipix, nside, order='nested')
+    lon_max, lat_max = ah.healpix_to_lonlat(ipix, nside, order='nested')
 
-    print('Most probable location: ', ra_max.deg, ra_max.deg, sep=' ')
+    print('Most probable location: ', lon_max.deg, lat_max.deg, sep=' ')
 
     # the entire probability map 
     level, ipix = ah.uniq_to_level_ipix(skymap['UNIQ'])
     nside = ah.level_to_nside(level)
-    ra, dec = ah.healpix_to_lonlat(ipix, nside, order='nested')
+    lon, lat = ah.healpix_to_lonlat(ipix, nside, order='nested')
 
-    print(level.shape, ipix.shape, ra.shape, dec.shape, sep=' ')
+    print(level.shape, ipix.shape, lon.shape, lat.shape, sep=' ')
 
     # find credible levels
     i = np.flipud(np.argsort(skymap['PROBDENSITY']))
@@ -42,12 +42,20 @@ if __name__ == '__main__':
     credible_levels = np.empty_like(sorted_credible_levels)
     credible_levels[i] = sorted_credible_levels
 
+    # shift longitude values by pi rad
+    lon_array, lat_array = [np.array(lon) - np.pi, np.array(lat)]
+
     plt.figure()
     plt.subplot(111, projection="mollweide",  facecolor='LightCyan')
-    plt.scatter(ra, dec, c=credible_levels[i])
-    plt.scatter(ra_max, dec_max, c='r', label='Probability Peak')
+
+    cred_levelMap = plt.scatter(lon_array, lat_array, 
+                                c=credible_levels[i], 
+                                marker='s', s=3, cmap='twilight_shifted')
+ 
+    plt.scatter(np.array(lon_max)-np.pi, lat_max, 
+                                c='r', marker='*', label='Probability Peak')
     plt.title('Mollweide Projection Test, Credible Levels')
     plt.legend()
-    plt.colorbar()
+    plt.colorbar(cred_levelMap)
     plt.grid(True)
     plt.savefig('tests/healpix_mollweide.png')
