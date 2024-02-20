@@ -26,7 +26,8 @@ Config : dict[str, any] = {
         'server'            :       'https://gracedb.ligo.org/api',
 
         # ::environment mode
-        'offline_mode'      :       False,
+        'offline_mode'      :       False,  # -> True: no server request
+        'local_files_first' :       True,   # -> True: check local files first
 
         # ::grace/local database structure setting
         # dictionary keys below; should not be changed
