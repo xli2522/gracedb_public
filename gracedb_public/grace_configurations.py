@@ -26,6 +26,7 @@ class Grace_config(Local_config):
         super().__init__()
         # ::server interaction settings
         self._offline_mode          : bool = Config['offline_mode']
+        self._local_files_first     : bool = Config['local_files_first']
         self._server                : str  = Config['server']
         
         self._server_inquiry_chunk  : int = 30
@@ -110,6 +111,14 @@ class Grace_config(Local_config):
         '''get current log address'''
         return self._log_address
     
+    def _get_offline_mode(self) -> bool:
+        '''get current offline mode status'''
+        return self._offline_mode
+    
+    def _get_local_files_first(self) -> bool:
+        '''get current local files first status'''
+        return self._local_files_first
+    
     # setter
     # ::user setter
     def set_server(self, alt_server : str) -> None:
@@ -122,7 +131,14 @@ class Grace_config(Local_config):
     
     # ::internal setter
     # internal set database key
-
+    def _set_offline_mode(self, mode : bool) -> None:
+        '''set offline mode status'''
+        self._offline_mode = mode
+    
+    def _set_local_files_first(self, mode : bool) -> None:
+        '''set local files first status'''
+        self._local_files_first = mode
+        
     # internal event and file information
     def _set_myFile_path(self, alt_path : str) -> None:
         ''' set temporary path to current file; should not use 

@@ -63,9 +63,20 @@ files_list = get_response_dict(file_link,
             cache_dir='/'.join([client.get_files_address()]))
 print(json.dumps(files_list, indent=4))
 
-# save the first file avaliable
-get_file(files_list[str(list(files_list.keys())[0])], 
-            cache_dir='/'.join([client.get_files_address()]))
+# save the first 3 files avaliable
+files_to_get = []
+client._set_offline_mode(True)      # force offline mode (stop sending requests)
+for title in list(files_list.keys())[:3]:
+    files_to_get.append(files_list[title]) 
+print(files_to_get)
+
+files_status = get_file(files_to_get, 
+            cache_dir='/'.join([client.get_files_address()]),
+                               offline_mode=client._get_offline_mode(),
+                               local_files=client._get_local_files_first())
+# if offline_mode is enabled, missing files should show False
+print(json.dumps(files_status, indent=4))
+
 
 # # clear files, logs, and databases
 # client.clear_files()        # should see a warning message
