@@ -38,7 +38,7 @@ if send_server_request:
     client.server_update_superevents(count=50, wait_t=1)
     # get {count} most recent superevents, wait {wait_t} s per request
 
-# sort the local database by event id
+# sort the local database by creation time
 client.sort_localDB_by_creation_time()
 
 # load the sorted DB
