@@ -2,6 +2,4596 @@
     "numRows": 4702,
     "superevents": [
         {
+            "superevent_id": "MS240221s",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-21 18:07:50 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392572211.082773,
+            "t_0": 1392572212.082773,
+            "t_end": 1392572213.082773,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240221s/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240221s/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240221s/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240221s/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240221s/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240221s/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-21 18:07:50 UTC",
+                "group": "CBC",
+                "graceid": "M468220",
+                "pipeline": "gstlal",
+                "gpstime": 1392572212.082773,
+                "reporting_latency": 1875.931541,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 67.86305558709907,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392572212,
+                            "end_time_ns": 82773487
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392572212,
+                            "end_time_ns": 82025022
+                        }
+                    ]
+                },
+                "superevent": "MS240221s",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468220/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468220/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468220/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468220/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468220/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468220",
+                    "tags": "https://gracedb.ligo.org/api/events/M468220/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468220",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392572212.082773,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240221r",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-21 17:07:50 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468219",
+            "t_start": 1392570152.916613,
+            "t_0": 1392570153.916613,
+            "t_end": 1392570154.916613,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": 5.373509899366442e-18,
+            "space_coinc_far": 0.000350848584168826,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240221r/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240221r/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240221r/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240221r/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240221r/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240221r/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-21 17:07:49 UTC",
+                "group": "CBC",
+                "graceid": "M468218",
+                "pipeline": "gstlal",
+                "gpstime": 1392570153.916613,
+                "reporting_latency": 333.90664,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 41.83180392100202,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392570153,
+                            "end_time_ns": 920221811
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392570153,
+                            "end_time_ns": 916613166
+                        }
+                    ]
+                },
+                "superevent": "MS240221r",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468218/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468218/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468218/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468218/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468218/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468218",
+                    "tags": "https://gracedb.ligo.org/api/events/M468218/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468218",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392570153.916613,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240221q",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-21 16:07:50 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392565884.550607,
+            "t_0": 1392565885.550607,
+            "t_end": 1392565886.550607,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVNO",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240221q/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240221q/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240221q/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240221q/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240221q/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240221q/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-21 16:07:49 UTC",
+                "group": "CBC",
+                "graceid": "M468216",
+                "pipeline": "gstlal",
+                "gpstime": 1392565885.550607,
+                "reporting_latency": 1001.912564,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 69.50413871584169,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392565885,
+                            "end_time_ns": 550606789
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392565885,
+                            "end_time_ns": 548905509
+                        }
+                    ]
+                },
+                "superevent": "MS240221q",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468216/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468216/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468216/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468216/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468216/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468216",
+                    "tags": "https://gracedb.ligo.org/api/events/M468216/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468216",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392565885.550607,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240221p",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-21 15:07:50 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468215",
+            "t_start": 1392563011.553715,
+            "t_0": 1392563012.553715,
+            "t_end": 1392563013.553715,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": 5.373509899366442e-18,
+            "space_coinc_far": 1.24935769920765e-17,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "RAVEN_ALERT",
+                "DQR_REQUEST",
+                "COMBINEDSKYMAP_READY",
+                "SOG_READY",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240221p/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240221p/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240221p/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240221p/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240221p/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240221p/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-21 15:07:49 UTC",
+                "group": "CBC",
+                "graceid": "M468214",
+                "pipeline": "gstlal",
+                "gpstime": 1392563012.553715,
+                "reporting_latency": 274.783558,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 39.58780592924986,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY",
+                    "RAVEN_ALERT"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392563012,
+                            "end_time_ns": 553717416
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392563012,
+                            "end_time_ns": 553714782
+                        }
+                    ]
+                },
+                "superevent": "MS240221p",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468214/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468214/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468214/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468214/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468214/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468214",
+                    "tags": "https://gracedb.ligo.org/api/events/M468214/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468214",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392563012.553715,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240221o",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-21 14:07:50 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392559625.733506,
+            "t_0": 1392559626.733506,
+            "t_end": 1392559627.733506,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVNO",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240221o/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240221o/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240221o/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240221o/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240221o/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240221o/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-21 14:07:49 UTC",
+                "group": "CBC",
+                "graceid": "M468212",
+                "pipeline": "gstlal",
+                "gpstime": 1392559626.733506,
+                "reporting_latency": 60.932262,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 54.68917881408366,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392559626,
+                            "end_time_ns": 737846587
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392559626,
+                            "end_time_ns": 733505822
+                        }
+                    ]
+                },
+                "superevent": "MS240221o",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468212/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468212/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468212/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468212/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468212/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468212",
+                    "tags": "https://gracedb.ligo.org/api/events/M468212/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468212",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392559626.733506,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240221n",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-21 13:07:50 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468210",
+            "t_start": 1392555519.652739,
+            "t_0": 1392555520.652739,
+            "t_end": 1392555521.652739,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": 5.373509899366442e-18,
+            "space_coinc_far": 1.0410869297970447e-17,
+            "labels": [
+                "EM_READY",
+                "ADVNO",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "RAVEN_ALERT",
+                "DQR_REQUEST",
+                "COMBINEDSKYMAP_READY",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240221n/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240221n/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240221n/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240221n/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240221n/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240221n/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-21 13:07:49 UTC",
+                "group": "CBC",
+                "graceid": "M468209",
+                "pipeline": "gstlal",
+                "gpstime": 1392555520.652739,
+                "reporting_latency": 566.954373,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 1.207703145502e+78,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY",
+                    "RAVEN_ALERT"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392555520,
+                            "end_time_ns": 652738566
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392555520,
+                            "end_time_ns": 654021427
+                        }
+                    ]
+                },
+                "superevent": "MS240221n",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468209/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468209/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468209/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468209/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468209/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468209",
+                    "tags": "https://gracedb.ligo.org/api/events/M468209/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468209",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392555520.652739,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240221m",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-21 12:07:50 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392551701.218594,
+            "t_0": 1392551702.218594,
+            "t_end": 1392551703.218594,
+            "far": 6.786496426516116e-14,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVNO",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240221m/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240221m/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240221m/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240221m/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240221m/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240221m/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-21 12:07:49 UTC",
+                "group": "CBC",
+                "graceid": "M468204",
+                "pipeline": "gstlal",
+                "gpstime": 1392551702.218594,
+                "reporting_latency": 785.056334,
+                "instruments": "H1,V1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 6.786496426516116e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 34.22671904971314,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392551702,
+                            "end_time_ns": 218593725
+                        },
+                        {
+                            "ifo": "V1",
+                            "end_time": 1392551702,
+                            "end_time_ns": 220611542
+                        }
+                    ]
+                },
+                "superevent": "MS240221m",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468204/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468204/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468204/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468204/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468204/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468204",
+                    "tags": "https://gracedb.ligo.org/api/events/M468204/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468204",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392551702.218594,
+                    "far": 6.786496426516116e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240221l",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-21 11:07:50 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468203",
+            "t_start": 1392548703.631407,
+            "t_0": 1392548704.631407,
+            "t_end": 1392548705.631407,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": 5.373509899366442e-18,
+            "space_coinc_far": 5.859228101445603e-17,
+            "labels": [
+                "EM_READY",
+                "ADVNO",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "RAVEN_ALERT",
+                "DQR_REQUEST",
+                "COMBINEDSKYMAP_READY",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240221l/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240221l/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240221l/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240221l/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240221l/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240221l/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-21 11:07:49 UTC",
+                "group": "CBC",
+                "graceid": "M468202",
+                "pipeline": "gstlal",
+                "gpstime": 1392548704.631407,
+                "reporting_latency": 182.58307,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 40.32709542688784,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY",
+                    "RAVEN_ALERT"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392548704,
+                            "end_time_ns": 631407146
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392548704,
+                            "end_time_ns": 631813030
+                        }
+                    ]
+                },
+                "superevent": "MS240221l",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468202/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468202/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468202/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468202/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468202/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468202",
+                    "tags": "https://gracedb.ligo.org/api/events/M468202/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468202",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392548704.631407,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240221k",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-21 10:07:50 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392543925.602944,
+            "t_0": 1392543926.602944,
+            "t_end": 1392543927.602944,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240221k/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240221k/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240221k/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240221k/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240221k/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240221k/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-21 10:07:49 UTC",
+                "group": "CBC",
+                "graceid": "M468200",
+                "pipeline": "gstlal",
+                "gpstime": 1392543926.602944,
+                "reporting_latency": 1361.055262,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 69.23106484134017,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392543926,
+                            "end_time_ns": 602944113
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392543926,
+                            "end_time_ns": 603948730
+                        }
+                    ]
+                },
+                "superevent": "MS240221k",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468200/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468200/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468200/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468200/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468200/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468200",
+                    "tags": "https://gracedb.ligo.org/api/events/M468200/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468200",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392543926.602944,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240221j",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-21 09:07:49 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468199",
+            "t_start": 1392540915.721077,
+            "t_0": 1392540916.721077,
+            "t_end": 1392540917.721077,
+            "far": 5.176954877338635e-16,
+            "time_coinc_far": 3.0533790182172315e-20,
+            "space_coinc_far": 1.4815244001879546e-13,
+            "labels": [
+                "EM_READY",
+                "ADVNO",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "RAVEN_ALERT",
+                "DQR_REQUEST",
+                "COMBINEDSKYMAP_READY",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240221j/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240221j/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240221j/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240221j/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240221j/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240221j/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-21 09:07:49 UTC",
+                "group": "CBC",
+                "graceid": "M468198",
+                "pipeline": "gstlal",
+                "gpstime": 1392540916.721077,
+                "reporting_latency": 770.390086,
+                "instruments": "H1,L1,V1",
+                "nevents": 3,
+                "offline": false,
+                "search": "MDC",
+                "far": 5.176954877338635e-16,
+                "far_is_upper_limit": false,
+                "likelihood": 55.83440526499565,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY",
+                    "RAVEN_ALERT"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392540916,
+                            "end_time_ns": 721077302
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392540916,
+                            "end_time_ns": 722297943
+                        },
+                        {
+                            "ifo": "V1",
+                            "end_time": 1392540916,
+                            "end_time_ns": 724457219
+                        }
+                    ]
+                },
+                "superevent": "MS240221j",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468198/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468198/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468198/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468198/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468198/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468198",
+                    "tags": "https://gracedb.ligo.org/api/events/M468198/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468198",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392540916.721077,
+                    "far": 5.176954877338635e-16
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240221i",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-21 08:07:50 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392537421.88929,
+            "t_0": 1392537422.88929,
+            "t_end": 1392537423.88929,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240221i/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240221i/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240221i/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240221i/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240221i/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240221i/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-21 08:07:49 UTC",
+                "group": "CBC",
+                "graceid": "M468196",
+                "pipeline": "gstlal",
+                "gpstime": 1392537422.88929,
+                "reporting_latency": 664.670783,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 27.95118905860874,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392537422,
+                            "end_time_ns": 889290008
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392537422,
+                            "end_time_ns": 892957257
+                        }
+                    ]
+                },
+                "superevent": "MS240221i",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468196/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468196/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468196/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468196/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468196/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468196",
+                    "tags": "https://gracedb.ligo.org/api/events/M468196/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468196",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392537422.88929,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240221h",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-21 07:07:49 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468195",
+            "t_start": 1392533242.214985,
+            "t_0": 1392533243.214985,
+            "t_end": 1392533244.214985,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": 5.373509899366442e-18,
+            "space_coinc_far": 1.4674978875275645e-17,
+            "labels": [
+                "EM_READY",
+                "ADVNO",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "RAVEN_ALERT",
+                "DQR_REQUEST",
+                "COMBINEDSKYMAP_READY",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240221h/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240221h/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240221h/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240221h/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240221h/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240221h/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-21 07:07:49 UTC",
+                "group": "CBC",
+                "graceid": "M468194",
+                "pipeline": "gstlal",
+                "gpstime": 1392533243.214985,
+                "reporting_latency": 1243.834665,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 33.67208211983797,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY",
+                    "RAVEN_ALERT"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392533243,
+                            "end_time_ns": 216854938
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392533243,
+                            "end_time_ns": 214984615
+                        }
+                    ]
+                },
+                "superevent": "MS240221h",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468194/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468194/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468194/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468194/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468194/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468194",
+                    "tags": "https://gracedb.ligo.org/api/events/M468194/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468194",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392533243.214985,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240221g",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-21 06:07:49 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392530669.960335,
+            "t_0": 1392530670.960335,
+            "t_end": 1392530671.960335,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVNO",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240221g/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240221g/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240221g/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240221g/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240221g/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240221g/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-21 06:07:49 UTC",
+                "group": "CBC",
+                "graceid": "M468189",
+                "pipeline": "gstlal",
+                "gpstime": 1392530670.960335,
+                "reporting_latency": 216.050539,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 29.75999004118853,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392530670,
+                            "end_time_ns": 961569832
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392530670,
+                            "end_time_ns": 960335263
+                        }
+                    ]
+                },
+                "superevent": "MS240221g",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468189/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468189/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468189/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468189/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468189/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468189",
+                    "tags": "https://gracedb.ligo.org/api/events/M468189/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468189",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392530670.960335,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240221f",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-21 05:07:49 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468188",
+            "t_start": 1392527254.404309,
+            "t_0": 1392527255.404309,
+            "t_end": 1392527256.404309,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": 5.373509899366442e-18,
+            "space_coinc_far": 6.677868016369865e-13,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "RAVEN_ALERT",
+                "DQR_REQUEST",
+                "COMBINEDSKYMAP_READY",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240221f/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240221f/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240221f/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240221f/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240221f/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240221f/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-21 05:07:48 UTC",
+                "group": "CBC",
+                "graceid": "M468187",
+                "pipeline": "gstlal",
+                "gpstime": 1392527255.404309,
+                "reporting_latency": 31.566056,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 49.56184069311671,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY",
+                    "RAVEN_ALERT"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392527255,
+                            "end_time_ns": 409177155
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392527255,
+                            "end_time_ns": 404308447
+                        }
+                    ]
+                },
+                "superevent": "MS240221f",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468187/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468187/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468187/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468187/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468187/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468187",
+                    "tags": "https://gracedb.ligo.org/api/events/M468187/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468187",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392527255.404309,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240221e",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-21 04:07:49 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392523155.87009,
+            "t_0": 1392523156.87009,
+            "t_end": 1392523157.87009,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVNO",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240221e/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240221e/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240221e/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240221e/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240221e/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240221e/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-21 04:07:49 UTC",
+                "group": "CBC",
+                "graceid": "M468185",
+                "pipeline": "gstlal",
+                "gpstime": 1392523156.87009,
+                "reporting_latency": 530.276674,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 37.00255833273491,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392523156,
+                            "end_time_ns": 869351524
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392523156,
+                            "end_time_ns": 870089868
+                        }
+                    ]
+                },
+                "superevent": "MS240221e",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468185/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468185/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468185/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468185/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468185/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468185",
+                    "tags": "https://gracedb.ligo.org/api/events/M468185/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468185",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392523156.87009,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240221d",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-21 03:07:49 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468184",
+            "t_start": 1392518882.817038,
+            "t_0": 1392518883.817038,
+            "t_end": 1392518884.817038,
+            "far": 6.786496426516116e-14,
+            "time_coinc_far": 4.002690053691012e-18,
+            "space_coinc_far": 6.034865257610778e-16,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "RAVEN_ALERT",
+                "DQR_REQUEST",
+                "COMBINEDSKYMAP_READY",
+                "SOG_READY",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240221d/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240221d/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240221d/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240221d/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240221d/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240221d/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-21 03:07:49 UTC",
+                "group": "CBC",
+                "graceid": "M468183",
+                "pipeline": "gstlal",
+                "gpstime": 1392518883.817038,
+                "reporting_latency": 1203.26539,
+                "instruments": "H1,V1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 6.786496426516116e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 48.00926465985882,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY",
+                    "RAVEN_ALERT",
+                    "RAVEN_ALERT"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "V1",
+                            "end_time": 1392518883,
+                            "end_time_ns": 830667299
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392518883,
+                            "end_time_ns": 817037660
+                        }
+                    ]
+                },
+                "superevent": "MS240221d",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468183/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468183/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468183/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468183/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468183/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468183",
+                    "tags": "https://gracedb.ligo.org/api/events/M468183/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468183",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392518883.817038,
+                    "far": 6.786496426516116e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240221c",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-21 02:07:49 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392516293.000988,
+            "t_0": 1392516294.000988,
+            "t_end": 1392516295.000988,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240221c/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240221c/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240221c/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240221c/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240221c/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240221c/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-21 02:07:48 UTC",
+                "group": "CBC",
+                "graceid": "M468181",
+                "pipeline": "gstlal",
+                "gpstime": 1392516294.000988,
+                "reporting_latency": 192.915273,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 31.40012642116061,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392516294,
+                            "end_time_ns": 988065
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392516294,
+                            "end_time_ns": 6835726
+                        }
+                    ]
+                },
+                "superevent": "MS240221c",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468181/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468181/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468181/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468181/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468181/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468181",
+                    "tags": "https://gracedb.ligo.org/api/events/M468181/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468181",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392516294.000988,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240221b",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-21 01:07:50 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468180",
+            "t_start": 1392512768.757135,
+            "t_0": 1392512769.757135,
+            "t_end": 1392512770.757135,
+            "far": 5.176954877338635e-16,
+            "time_coinc_far": 3.0533790182172315e-20,
+            "space_coinc_far": 4.77565245985973e+23,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240221b/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240221b/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240221b/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240221b/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240221b/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240221b/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-21 01:07:49 UTC",
+                "group": "CBC",
+                "graceid": "M468179",
+                "pipeline": "gstlal",
+                "gpstime": 1392512769.757135,
+                "reporting_latency": 117.777192,
+                "instruments": "H1,L1,V1",
+                "nevents": 3,
+                "offline": false,
+                "search": "MDC",
+                "far": 5.176954877338635e-16,
+                "far_is_upper_limit": false,
+                "likelihood": 59.93640102957099,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392512769,
+                            "end_time_ns": 760750171
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392512769,
+                            "end_time_ns": 757135085
+                        },
+                        {
+                            "ifo": "V1",
+                            "end_time": 1392512769,
+                            "end_time_ns": 735602253
+                        }
+                    ]
+                },
+                "superevent": "MS240221b",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468179/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468179/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468179/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468179/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468179/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468179",
+                    "tags": "https://gracedb.ligo.org/api/events/M468179/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468179",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392512769.757135,
+                    "far": 5.176954877338635e-16
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240221a",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-21 00:07:47 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392508983.842442,
+            "t_0": 1392508984.842442,
+            "t_end": 1392508985.842442,
+            "far": 5.176954877338635e-16,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVNO",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240221a/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240221a/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240221a/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240221a/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240221a/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240221a/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-21 00:07:46 UTC",
+                "group": "CBC",
+                "graceid": "M468174",
+                "pipeline": "gstlal",
+                "gpstime": 1392508984.842442,
+                "reporting_latency": 299.676145,
+                "instruments": "H1,L1,V1",
+                "nevents": 3,
+                "offline": false,
+                "search": "MDC",
+                "far": 5.176954877338635e-16,
+                "far_is_upper_limit": false,
+                "likelihood": 1.207703145502e+78,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "V1",
+                            "end_time": 1392508984,
+                            "end_time_ns": 825825115
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392508984,
+                            "end_time_ns": 847817576
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392508984,
+                            "end_time_ns": 842441753
+                        }
+                    ]
+                },
+                "superevent": "MS240221a",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468174/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468174/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468174/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468174/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468174/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468174",
+                    "tags": "https://gracedb.ligo.org/api/events/M468174/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468174",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392508984.842442,
+                    "far": 5.176954877338635e-16
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220x",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 23:07:47 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468173",
+            "t_start": 1392505483.274833,
+            "t_0": 1392505484.274833,
+            "t_end": 1392505485.274833,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": 5.373509899366442e-18,
+            "space_coinc_far": 2.276584602452371e-17,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "RAVEN_ALERT",
+                "DQR_REQUEST",
+                "COMBINEDSKYMAP_READY",
+                "SOG_READY",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220x/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220x/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220x/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220x/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220x/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220x/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 23:07:46 UTC",
+                "group": "CBC",
+                "graceid": "M468172",
+                "pipeline": "gstlal",
+                "gpstime": 1392505484.274833,
+                "reporting_latency": 200.023693,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 69.15608771856562,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY",
+                    "RAVEN_ALERT"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392505484,
+                            "end_time_ns": 269257538
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392505484,
+                            "end_time_ns": 274833324
+                        }
+                    ]
+                },
+                "superevent": "MS240220x",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468172/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468172/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468172/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468172/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468172/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468172",
+                    "tags": "https://gracedb.ligo.org/api/events/M468172/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468172",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392505484.274833,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220w",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 22:07:46 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392501637.21716,
+            "t_0": 1392501638.21716,
+            "t_end": 1392501639.21716,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220w/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220w/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220w/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220w/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220w/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220w/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 22:07:45 UTC",
+                "group": "CBC",
+                "graceid": "M468170",
+                "pipeline": "gstlal",
+                "gpstime": 1392501638.21716,
+                "reporting_latency": 445.715205,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 26.16886431211499,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392501638,
+                            "end_time_ns": 217159973
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392501638,
+                            "end_time_ns": 218386434
+                        }
+                    ]
+                },
+                "superevent": "MS240220w",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468170/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468170/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468170/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468170/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468170/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468170",
+                    "tags": "https://gracedb.ligo.org/api/events/M468170/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468170",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392501638.21716,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220v",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 21:07:46 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468169",
+            "t_start": 1392498159.550662,
+            "t_0": 1392498160.550662,
+            "t_end": 1392498161.550662,
+            "far": 5.176954877338635e-16,
+            "time_coinc_far": 3.0533790182172315e-20,
+            "space_coinc_far": 2.166550336923035e-20,
+            "labels": [
+                "EM_READY",
+                "ADVNO",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "RAVEN_ALERT",
+                "DQR_REQUEST",
+                "COMBINEDSKYMAP_READY",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220v/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220v/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220v/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220v/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220v/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220v/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 21:07:45 UTC",
+                "group": "CBC",
+                "graceid": "M468168",
+                "pipeline": "gstlal",
+                "gpstime": 1392498160.550662,
+                "reporting_latency": 323.342388,
+                "instruments": "H1,L1,V1",
+                "nevents": 3,
+                "offline": false,
+                "search": "MDC",
+                "far": 5.176954877338635e-16,
+                "far_is_upper_limit": false,
+                "likelihood": 1.207703145502e+78,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY",
+                    "RAVEN_ALERT"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392498160,
+                            "end_time_ns": 550662212
+                        },
+                        {
+                            "ifo": "V1",
+                            "end_time": 1392498160,
+                            "end_time_ns": 563083703
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392498160,
+                            "end_time_ns": 550619467
+                        }
+                    ]
+                },
+                "superevent": "MS240220v",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468168/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468168/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468168/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468168/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468168/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468168",
+                    "tags": "https://gracedb.ligo.org/api/events/M468168/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468168",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392498160.550662,
+                    "far": 5.176954877338635e-16
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220u",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 20:07:46 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392494872.349945,
+            "t_0": 1392494873.349945,
+            "t_end": 1392494874.349945,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220u/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220u/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220u/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220u/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220u/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220u/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 20:07:46 UTC",
+                "group": "CBC",
+                "graceid": "M468166",
+                "pipeline": "gstlal",
+                "gpstime": 1392494873.349945,
+                "reporting_latency": 10.795231,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 69.61421109022572,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392494873,
+                            "end_time_ns": 349944542
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392494873,
+                            "end_time_ns": 344080735
+                        }
+                    ]
+                },
+                "superevent": "MS240220u",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468166/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468166/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468166/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468166/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468166/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468166",
+                    "tags": "https://gracedb.ligo.org/api/events/M468166/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468166",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392494873.349945,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220t",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 19:07:46 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468165",
+            "t_start": 1392491053.808707,
+            "t_0": 1392491054.808707,
+            "t_end": 1392491055.808707,
+            "far": 1.481184312127537e-15,
+            "time_coinc_far": 8.736056635455411e-20,
+            "space_coinc_far": 2.0126135527442358e-20,
+            "labels": [
+                "EM_READY",
+                "ADVNO",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "RAVEN_ALERT",
+                "DQR_REQUEST",
+                "COMBINEDSKYMAP_READY",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220t/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220t/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220t/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220t/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220t/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220t/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 19:07:45 UTC",
+                "group": "CBC",
+                "graceid": "M468164",
+                "pipeline": "gstlal",
+                "gpstime": 1392491054.808707,
+                "reporting_latency": 228.965667,
+                "instruments": "H1,L1,V1",
+                "nevents": 3,
+                "offline": false,
+                "search": "MDC",
+                "far": 1.481184312127537e-15,
+                "far_is_upper_limit": false,
+                "likelihood": 23.31768421810116,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY",
+                    "RAVEN_ALERT"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "V1",
+                            "end_time": 1392491054,
+                            "end_time_ns": 796485322
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392491054,
+                            "end_time_ns": 808707554
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392491054,
+                            "end_time_ns": 804051700
+                        }
+                    ]
+                },
+                "superevent": "MS240220t",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468164/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468164/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468164/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468164/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468164/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468164",
+                    "tags": "https://gracedb.ligo.org/api/events/M468164/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468164",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392491054.808707,
+                    "far": 1.481184312127537e-15
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220s",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 18:07:46 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392486046.992225,
+            "t_0": 1392486047.992225,
+            "t_end": 1392486048.992225,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220s/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220s/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220s/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220s/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220s/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220s/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 18:07:45 UTC",
+                "group": "CBC",
+                "graceid": "M468159",
+                "pipeline": "gstlal",
+                "gpstime": 1392486047.992225,
+                "reporting_latency": 1635.824616,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 67.86305558709907,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392486047,
+                            "end_time_ns": 992224991
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392486047,
+                            "end_time_ns": 991476526
+                        }
+                    ]
+                },
+                "superevent": "MS240220s",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468159/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468159/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468159/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468159/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468159/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468159",
+                    "tags": "https://gracedb.ligo.org/api/events/M468159/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468159",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392486047.992225,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220r",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 17:07:46 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468157",
+            "t_start": 1392483988.826076,
+            "t_0": 1392483989.826076,
+            "t_end": 1392483990.826076,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": 5.373509899366442e-18,
+            "space_coinc_far": 4.420951915202456e-13,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "RAVEN_ALERT",
+                "DQR_REQUEST",
+                "COMBINEDSKYMAP_READY",
+                "SOG_READY",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220r/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220r/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220r/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220r/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220r/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220r/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 17:07:45 UTC",
+                "group": "CBC",
+                "graceid": "M468156",
+                "pipeline": "gstlal",
+                "gpstime": 1392483989.826076,
+                "reporting_latency": 93.970153,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 41.83180392100202,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY",
+                    "RAVEN_ALERT"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392483989,
+                            "end_time_ns": 829684988
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392483989,
+                            "end_time_ns": 826076343
+                        }
+                    ]
+                },
+                "superevent": "MS240220r",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468156/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468156/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468156/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468156/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468156/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468156",
+                    "tags": "https://gracedb.ligo.org/api/events/M468156/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468156",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392483989.826076,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220q",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 16:07:46 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392479720.46007,
+            "t_0": 1392479721.46007,
+            "t_end": 1392479722.46007,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220q/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220q/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220q/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220q/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220q/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220q/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 16:07:45 UTC",
+                "group": "CBC",
+                "graceid": "M468153",
+                "pipeline": "gstlal",
+                "gpstime": 1392479721.46007,
+                "reporting_latency": 762.288132,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 69.50413871584169,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392479721,
+                            "end_time_ns": 460069669
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392479721,
+                            "end_time_ns": 458368389
+                        }
+                    ]
+                },
+                "superevent": "MS240220q",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468153/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468153/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468153/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468153/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468153/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468153",
+                    "tags": "https://gracedb.ligo.org/api/events/M468153/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468153",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392479721.46007,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220p",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 15:07:46 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468152",
+            "t_start": 1392476847.463178,
+            "t_0": 1392476848.463178,
+            "t_end": 1392476849.463178,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": 5.373509899366442e-18,
+            "space_coinc_far": 28.878584165139415,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220p/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220p/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220p/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220p/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220p/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220p/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 15:07:45 UTC",
+                "group": "CBC",
+                "graceid": "M468151",
+                "pipeline": "gstlal",
+                "gpstime": 1392476848.463178,
+                "reporting_latency": 35.147032,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 39.58780592924986,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392476848,
+                            "end_time_ns": 463180294
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392476848,
+                            "end_time_ns": 463177660
+                        }
+                    ]
+                },
+                "superevent": "MS240220p",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468151/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468151/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468151/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468151/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468151/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468151",
+                    "tags": "https://gracedb.ligo.org/api/events/M468151/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468151",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392476848.463178,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220o",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 14:07:46 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392472627.655259,
+            "t_0": 1392472628.655259,
+            "t_end": 1392472629.655259,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220o/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220o/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220o/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220o/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220o/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220o/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 14:07:46 UTC",
+                "group": "CBC",
+                "graceid": "M468149",
+                "pipeline": "gstlal",
+                "gpstime": 1392472628.655259,
+                "reporting_latency": 655.486886,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 66.95758242513062,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392472628,
+                            "end_time_ns": 655258694
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392472628,
+                            "end_time_ns": 656921015
+                        }
+                    ]
+                },
+                "superevent": "MS240220o",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468149/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468149/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468149/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468149/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468149/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468149",
+                    "tags": "https://gracedb.ligo.org/api/events/M468149/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468149",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392472628.655259,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220n",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 13:07:46 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468148",
+            "t_start": 1392469355.562201,
+            "t_0": 1392469356.562201,
+            "t_end": 1392469357.562201,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": 5.373509899366442e-18,
+            "space_coinc_far": 6.734855944129691e-11,
+            "labels": [
+                "EM_READY",
+                "ADVNO",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "RAVEN_ALERT",
+                "DQR_REQUEST",
+                "COMBINEDSKYMAP_READY",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220n/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220n/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220n/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220n/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220n/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220n/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 13:07:45 UTC",
+                "group": "CBC",
+                "graceid": "M468146",
+                "pipeline": "gstlal",
+                "gpstime": 1392469356.562201,
+                "reporting_latency": 327.076804,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 1.207703145502e+78,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY",
+                    "RAVEN_ALERT"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392469356,
+                            "end_time_ns": 562201445
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392469356,
+                            "end_time_ns": 563484306
+                        }
+                    ]
+                },
+                "superevent": "MS240220n",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468146/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468146/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468146/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468146/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468146/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468146",
+                    "tags": "https://gracedb.ligo.org/api/events/M468146/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468146",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392469356.562201,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220m",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 12:07:47 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392465537.128057,
+            "t_0": 1392465538.128057,
+            "t_end": 1392465539.128057,
+            "far": 6.786496426516116e-14,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220m/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220m/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220m/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220m/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220m/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220m/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 12:07:46 UTC",
+                "group": "CBC",
+                "graceid": "M468141",
+                "pipeline": "gstlal",
+                "gpstime": 1392465538.128057,
+                "reporting_latency": 546.20066,
+                "instruments": "H1,V1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 6.786496426516116e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 34.22671904971314,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392465538,
+                            "end_time_ns": 128056703
+                        },
+                        {
+                            "ifo": "V1",
+                            "end_time": 1392465538,
+                            "end_time_ns": 130074520
+                        }
+                    ]
+                },
+                "superevent": "MS240220m",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468141/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468141/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468141/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468141/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468141/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468141",
+                    "tags": "https://gracedb.ligo.org/api/events/M468141/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468141",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392465538.128057,
+                    "far": 6.786496426516116e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220l",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 11:07:46 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468139",
+            "t_start": 1392462238.699865,
+            "t_0": 1392462239.699865,
+            "t_end": 1392462240.699865,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": 5.373509899366442e-18,
+            "space_coinc_far": 1.7383077461720175e-17,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "RAVEN_ALERT",
+                "DQR_REQUEST",
+                "COMBINEDSKYMAP_READY",
+                "SOG_READY",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220l/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220l/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220l/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220l/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220l/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220l/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 11:07:45 UTC",
+                "group": "CBC",
+                "graceid": "M468138",
+                "pipeline": "gstlal",
+                "gpstime": 1392462239.699865,
+                "reporting_latency": 244.14598,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 69.66706720067126,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY",
+                    "RAVEN_ALERT"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392462239,
+                            "end_time_ns": 699865084
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392462239,
+                            "end_time_ns": 703745610
+                        }
+                    ]
+                },
+                "superevent": "MS240220l",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468138/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468138/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468138/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468138/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468138/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468138",
+                    "tags": "https://gracedb.ligo.org/api/events/M468138/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468138",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392462239.699865,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220k",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 10:07:46 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392457761.512407,
+            "t_0": 1392457762.512407,
+            "t_end": 1392457763.512407,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVNO",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220k/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220k/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220k/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220k/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220k/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220k/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 10:07:45 UTC",
+                "group": "CBC",
+                "graceid": "M468136",
+                "pipeline": "gstlal",
+                "gpstime": 1392457762.512407,
+                "reporting_latency": 1120.936538,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 69.23106484134017,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392457762,
+                            "end_time_ns": 512407092
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392457762,
+                            "end_time_ns": 513411709
+                        }
+                    ]
+                },
+                "superevent": "MS240220k",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468136/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468136/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468136/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468136/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468136/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468136",
+                    "tags": "https://gracedb.ligo.org/api/events/M468136/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468136",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392457762.512407,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220j",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 09:07:46 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468135",
+            "t_start": 1392454751.63054,
+            "t_0": 1392454752.63054,
+            "t_end": 1392454753.63054,
+            "far": 5.176954877338635e-16,
+            "time_coinc_far": 3.0533790182172315e-20,
+            "space_coinc_far": 7.747527820398123e-20,
+            "labels": [
+                "EM_READY",
+                "ADVNO",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "RAVEN_ALERT",
+                "DQR_REQUEST",
+                "COMBINEDSKYMAP_READY",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220j/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220j/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220j/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220j/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220j/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220j/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 09:07:45 UTC",
+                "group": "CBC",
+                "graceid": "M468133",
+                "pipeline": "gstlal",
+                "gpstime": 1392454752.63054,
+                "reporting_latency": 530.758354,
+                "instruments": "H1,L1,V1",
+                "nevents": 3,
+                "offline": false,
+                "search": "MDC",
+                "far": 5.176954877338635e-16,
+                "far_is_upper_limit": false,
+                "likelihood": 55.83440526499565,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY",
+                    "RAVEN_ALERT"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392454752,
+                            "end_time_ns": 630540281
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392454752,
+                            "end_time_ns": 631760922
+                        },
+                        {
+                            "ifo": "V1",
+                            "end_time": 1392454752,
+                            "end_time_ns": 633920198
+                        }
+                    ]
+                },
+                "superevent": "MS240220j",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468133/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468133/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468133/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468133/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468133/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468133",
+                    "tags": "https://gracedb.ligo.org/api/events/M468133/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468133",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392454752.63054,
+                    "far": 5.176954877338635e-16
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220i",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 08:07:46 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392451257.798753,
+            "t_0": 1392451258.798753,
+            "t_end": 1392451259.798753,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220i/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220i/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220i/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220i/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220i/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220i/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 08:07:45 UTC",
+                "group": "CBC",
+                "graceid": "M468131",
+                "pipeline": "gstlal",
+                "gpstime": 1392451258.798753,
+                "reporting_latency": 424.953833,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 27.95118905860874,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392451258,
+                            "end_time_ns": 798752986
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392451258,
+                            "end_time_ns": 802420235
+                        }
+                    ]
+                },
+                "superevent": "MS240220i",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468131/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468131/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468131/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468131/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468131/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468131",
+                    "tags": "https://gracedb.ligo.org/api/events/M468131/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468131",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392451258.798753,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220h",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 07:07:46 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468130",
+            "t_start": 1392447078.124448,
+            "t_0": 1392447079.124448,
+            "t_end": 1392447080.124448,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": 5.373509899366442e-18,
+            "space_coinc_far": 1.700012795153253e-07,
+            "labels": [
+                "EM_READY",
+                "ADVNO",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220h/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220h/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220h/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220h/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220h/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220h/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 07:07:45 UTC",
+                "group": "CBC",
+                "graceid": "M468129",
+                "pipeline": "gstlal",
+                "gpstime": 1392447079.124448,
+                "reporting_latency": 1004.260401,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 33.67208211983797,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392447079,
+                            "end_time_ns": 126317916
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392447079,
+                            "end_time_ns": 124447593
+                        }
+                    ]
+                },
+                "superevent": "MS240220h",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468129/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468129/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468129/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468129/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468129/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468129",
+                    "tags": "https://gracedb.ligo.org/api/events/M468129/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468129",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392447079.124448,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220g",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 06:07:46 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392443914.926861,
+            "t_0": 1392443915.926861,
+            "t_end": 1392443916.926861,
+            "far": 5.176954877338635e-16,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220g/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220g/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220g/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220g/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220g/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220g/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 06:07:45 UTC",
+                "group": "CBC",
+                "graceid": "M468124",
+                "pipeline": "gstlal",
+                "gpstime": 1392443915.926861,
+                "reporting_latency": 567.42572,
+                "instruments": "H1,L1,V1",
+                "nevents": 3,
+                "offline": false,
+                "search": "MDC",
+                "far": 5.176954877338635e-16,
+                "far_is_upper_limit": false,
+                "likelihood": 42.40799312056409,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "V1",
+                            "end_time": 1392443915,
+                            "end_time_ns": 931497488
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392443915,
+                            "end_time_ns": 929572928
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392443915,
+                            "end_time_ns": 926861345
+                        }
+                    ]
+                },
+                "superevent": "MS240220g",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468124/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468124/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468124/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468124/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468124/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468124",
+                    "tags": "https://gracedb.ligo.org/api/events/M468124/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468124",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392443915.926861,
+                    "far": 5.176954877338635e-16
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220f",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 05:07:46 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468122",
+            "t_start": 1392440533.971052,
+            "t_0": 1392440534.971052,
+            "t_end": 1392440535.971052,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": 5.373509899366442e-18,
+            "space_coinc_far": 1.0993840189070443e-16,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "RAVEN_ALERT",
+                "DQR_REQUEST",
+                "COMBINEDSKYMAP_READY",
+                "SOG_READY",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220f/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220f/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220f/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220f/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220f/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220f/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 05:07:45 UTC",
+                "group": "CBC",
+                "graceid": "M468121",
+                "pipeline": "gstlal",
+                "gpstime": 1392440534.971052,
+                "reporting_latency": 348.265423,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 54.30175522340104,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY",
+                    "RAVEN_ALERT"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392440534,
+                            "end_time_ns": 971052317
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392440534,
+                            "end_time_ns": 966166197
+                        }
+                    ]
+                },
+                "superevent": "MS240220f",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468121/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468121/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468121/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468121/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468121/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468121",
+                    "tags": "https://gracedb.ligo.org/api/events/M468121/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468121",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392440534.971052,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220e",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 04:07:46 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392436991.779553,
+            "t_0": 1392436992.779553,
+            "t_end": 1392436993.779553,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220e/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220e/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220e/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220e/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220e/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220e/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 04:07:45 UTC",
+                "group": "CBC",
+                "graceid": "M468119",
+                "pipeline": "gstlal",
+                "gpstime": 1392436992.779553,
+                "reporting_latency": 290.49223,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 37.00255833273491,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392436992,
+                            "end_time_ns": 778814502
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392436992,
+                            "end_time_ns": 779552846
+                        }
+                    ]
+                },
+                "superevent": "MS240220e",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468119/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468119/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468119/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468119/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468119/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468119",
+                    "tags": "https://gracedb.ligo.org/api/events/M468119/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468119",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392436992.779553,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220d",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 03:07:46 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468118",
+            "t_start": 1392432718.726501,
+            "t_0": 1392432719.726501,
+            "t_end": 1392432720.726501,
+            "far": 6.786496426516116e-14,
+            "time_coinc_far": 4.002690053691012e-18,
+            "space_coinc_far": 5.48980521870481e-15,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "RAVEN_ALERT",
+                "DQR_REQUEST",
+                "COMBINEDSKYMAP_READY",
+                "SOG_READY",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220d/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220d/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220d/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220d/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220d/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220d/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 03:07:45 UTC",
+                "group": "CBC",
+                "graceid": "M468117",
+                "pipeline": "gstlal",
+                "gpstime": 1392432719.726501,
+                "reporting_latency": 963.426441,
+                "instruments": "H1,V1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 6.786496426516116e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 48.00926465985882,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY",
+                    "RAVEN_ALERT",
+                    "RAVEN_ALERT"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "V1",
+                            "end_time": 1392432719,
+                            "end_time_ns": 740130315
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392432719,
+                            "end_time_ns": 726500676
+                        }
+                    ]
+                },
+                "superevent": "MS240220d",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468117/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468117/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468117/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468117/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468117/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468117",
+                    "tags": "https://gracedb.ligo.org/api/events/M468117/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468117",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392432719.726501,
+                    "far": 6.786496426516116e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220c",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 02:07:46 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392430051.22667,
+            "t_0": 1392430052.22667,
+            "t_end": 1392430053.22667,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220c/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220c/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220c/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220c/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220c/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220c/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 02:07:45 UTC",
+                "group": "CBC",
+                "graceid": "M468115",
+                "pipeline": "gstlal",
+                "gpstime": 1392430052.22667,
+                "reporting_latency": 31.315772,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 1.207703145502e+78,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392430052,
+                            "end_time_ns": 226670199
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392430052,
+                            "end_time_ns": 233301825
+                        }
+                    ]
+                },
+                "superevent": "MS240220c",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468115/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468115/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468115/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468115/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468115/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468115",
+                    "tags": "https://gracedb.ligo.org/api/events/M468115/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468115",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392430052.22667,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220b",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 01:07:47 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468114",
+            "t_start": 1392425825.580696,
+            "t_0": 1392425826.580696,
+            "t_end": 1392425827.580696,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": 5.373509899366442e-18,
+            "space_coinc_far": 2.8739843204923376e-07,
+            "labels": [
+                "EM_READY",
+                "ADVNO",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220b/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220b/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220b/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220b/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220b/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220b/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 01:07:45 UTC",
+                "group": "CBC",
+                "graceid": "M468113",
+                "pipeline": "gstlal",
+                "gpstime": 1392425826.580696,
+                "reporting_latency": 657.194198,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 27.11712076812297,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392425826,
+                            "end_time_ns": 575825777
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392425826,
+                            "end_time_ns": 580695653
+                        }
+                    ]
+                },
+                "superevent": "MS240220b",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468113/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468113/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468113/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468113/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468113/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468113",
+                    "tags": "https://gracedb.ligo.org/api/events/M468113/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468113",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392425826.580696,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240220a",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-20 00:07:31 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392422819.751905,
+            "t_0": 1392422820.751905,
+            "t_end": 1392422821.751905,
+            "far": 5.176954877338635e-16,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240220a/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240220a/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240220a/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240220a/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240220a/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240220a/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-20 00:07:30 UTC",
+                "group": "CBC",
+                "graceid": "M468108",
+                "pipeline": "gstlal",
+                "gpstime": 1392422820.751905,
+                "reporting_latency": 47.463466,
+                "instruments": "H1,L1,V1",
+                "nevents": 3,
+                "offline": false,
+                "search": "MDC",
+                "far": 5.176954877338635e-16,
+                "far_is_upper_limit": false,
+                "likelihood": 1.207703145502e+78,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "V1",
+                            "end_time": 1392422820,
+                            "end_time_ns": 735288192
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392422820,
+                            "end_time_ns": 757280653
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392422820,
+                            "end_time_ns": 751904830
+                        }
+                    ]
+                },
+                "superevent": "MS240220a",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468108/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468108/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468108/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468108/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468108/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468108",
+                    "tags": "https://gracedb.ligo.org/api/events/M468108/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468108",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392422820.751905,
+                    "far": 5.176954877338635e-16
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240219x",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-19 23:07:30 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468106",
+            "t_start": 1392419177.868386,
+            "t_0": 1392419178.868386,
+            "t_end": 1392419179.868386,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": 5.373509899366442e-18,
+            "space_coinc_far": 3.83565303708577e-18,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "RAVEN_ALERT",
+                "DQR_REQUEST",
+                "COMBINEDSKYMAP_READY",
+                "SOG_READY",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240219x/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240219x/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240219x/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240219x/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240219x/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240219x/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-19 23:07:29 UTC",
+                "group": "CBC",
+                "graceid": "M468105",
+                "pipeline": "gstlal",
+                "gpstime": 1392419178.868386,
+                "reporting_latency": 88.884227,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 1.207703145502e+78,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY",
+                    "RAVEN_ALERT"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392419178,
+                            "end_time_ns": 868877668
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392419178,
+                            "end_time_ns": 868385812
+                        }
+                    ]
+                },
+                "superevent": "MS240219x",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468105/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468105/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468105/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468105/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468105/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468105",
+                    "tags": "https://gracedb.ligo.org/api/events/M468105/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468105",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392419178.868386,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240219w",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-19 22:07:31 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392415473.126623,
+            "t_0": 1392415474.126623,
+            "t_end": 1392415475.126623,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVNO",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240219w/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240219w/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240219w/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240219w/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240219w/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240219w/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-19 22:07:30 UTC",
+                "group": "CBC",
+                "graceid": "M468103",
+                "pipeline": "gstlal",
+                "gpstime": 1392415474.126623,
+                "reporting_latency": 194.342518,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 26.16886431211499,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392415474,
+                            "end_time_ns": 126622990
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392415474,
+                            "end_time_ns": 127849451
+                        }
+                    ]
+                },
+                "superevent": "MS240219w",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468103/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468103/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468103/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468103/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468103/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468103",
+                    "tags": "https://gracedb.ligo.org/api/events/M468103/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468103",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392415474.126623,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240219v",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-19 21:07:32 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468101",
+            "t_start": 1392411995.460125,
+            "t_0": 1392411996.460125,
+            "t_end": 1392411997.460125,
+            "far": 5.176954877338635e-16,
+            "time_coinc_far": 3.0533790182172315e-20,
+            "space_coinc_far": 3.358731507670805e-17,
+            "labels": [
+                "EM_READY",
+                "ADVOK",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "RAVEN_ALERT",
+                "DQR_REQUEST",
+                "COMBINEDSKYMAP_READY",
+                "SOG_READY",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240219v/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240219v/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240219v/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240219v/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240219v/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240219v/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-19 21:07:29 UTC",
+                "group": "CBC",
+                "graceid": "M468100",
+                "pipeline": "gstlal",
+                "gpstime": 1392411996.460125,
+                "reporting_latency": 71.278458,
+                "instruments": "H1,L1,V1",
+                "nevents": 3,
+                "offline": false,
+                "search": "MDC",
+                "far": 5.176954877338635e-16,
+                "far_is_upper_limit": false,
+                "likelihood": 1.207703145502e+78,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY",
+                    "RAVEN_ALERT"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392411996,
+                            "end_time_ns": 460125090
+                        },
+                        {
+                            "ifo": "V1",
+                            "end_time": 1392411996,
+                            "end_time_ns": 472546581
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392411996,
+                            "end_time_ns": 460082345
+                        }
+                    ]
+                },
+                "superevent": "MS240219v",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468100/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468100/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468100/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468100/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468100/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468100",
+                    "tags": "https://gracedb.ligo.org/api/events/M468100/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468100",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392411996.460125,
+                    "far": 5.176954877338635e-16
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240219u",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-19 20:07:30 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392408423.644603,
+            "t_0": 1392408424.644603,
+            "t_end": 1392408425.644603,
+            "far": 6.786496426516116e-14,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVNO",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240219u/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240219u/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240219u/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240219u/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240219u/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240219u/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-19 20:07:29 UTC",
+                "group": "CBC",
+                "graceid": "M468098",
+                "pipeline": "gstlal",
+                "gpstime": 1392408424.644603,
+                "reporting_latency": 43.336476,
+                "instruments": "H1,V1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 6.786496426516116e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 39.85474763660689,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "V1",
+                            "end_time": 1392408424,
+                            "end_time_ns": 669023862
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392408424,
+                            "end_time_ns": 644602712
+                        }
+                    ]
+                },
+                "superevent": "MS240219u",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468098/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468098/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468098/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468098/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468098/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468098",
+                    "tags": "https://gracedb.ligo.org/api/events/M468098/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468098",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392408424.644603,
+                    "far": 6.786496426516116e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240219t",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-19 19:07:30 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468097",
+            "t_start": 1392404826.262817,
+            "t_0": 1392404827.262817,
+            "t_end": 1392404828.262817,
+            "far": 6.786496426516116e-14,
+            "time_coinc_far": 4.002690053691012e-18,
+            "space_coinc_far": 1.6481851935145724e-17,
+            "labels": [
+                "EM_READY",
+                "ADVNO",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "RAVEN_ALERT",
+                "DQR_REQUEST",
+                "COMBINEDSKYMAP_READY",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240219t/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240219t/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240219t/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240219t/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240219t/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240219t/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-19 19:07:29 UTC",
+                "group": "CBC",
+                "graceid": "M468096",
+                "pipeline": "gstlal",
+                "gpstime": 1392404827.262817,
+                "reporting_latency": 40.385384,
+                "instruments": "H1,V1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 6.786496426516116e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 34.81397560449494,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY",
+                    "RAVEN_ALERT"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "V1",
+                            "end_time": 1392404827,
+                            "end_time_ns": 261063049
+                        },
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392404827,
+                            "end_time_ns": 262816687
+                        }
+                    ]
+                },
+                "superevent": "MS240219t",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468096/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468096/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468096/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468096/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468096/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468096",
+                    "tags": "https://gracedb.ligo.org/api/events/M468096/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468096",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392404827.262817,
+                    "far": 6.786496426516116e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240219s",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-19 18:07:30 UTC",
+            "submitter": "emfollow",
+            "em_type": null,
+            "t_start": 1392399882.901694,
+            "t_0": 1392399883.901694,
+            "t_end": 1392399884.901694,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": null,
+            "space_coinc_far": null,
+            "labels": [
+                "EM_READY",
+                "ADVNO",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240219s/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240219s/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240219s/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240219s/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240219s/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240219s/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-19 18:07:29 UTC",
+                "group": "CBC",
+                "graceid": "M468091",
+                "pipeline": "gstlal",
+                "gpstime": 1392399883.901694,
+                "reporting_latency": 1383.773053,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 67.86305558709907,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392399883,
+                            "end_time_ns": 901694195
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392399883,
+                            "end_time_ns": 900945730
+                        }
+                    ]
+                },
+                "superevent": "MS240219s",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468091/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468091/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468091/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468091/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468091/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468091",
+                    "tags": "https://gracedb.ligo.org/api/events/M468091/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468091",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392399883.901694,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
+            "superevent_id": "MS240219r",
+            "gw_id": null,
+            "category": "MDC",
+            "created": "2024-02-19 17:07:30 UTC",
+            "submitter": "emfollow",
+            "em_type": "M468090",
+            "t_start": 1392397464.57278,
+            "t_0": 1392397465.57278,
+            "t_end": 1392397466.57278,
+            "far": 9.110699364861297e-14,
+            "time_coinc_far": 5.373509899366442e-18,
+            "space_coinc_far": 1.6796632281934851e-16,
+            "labels": [
+                "EM_READY",
+                "ADVNO",
+                "EM_COINC",
+                "SKYMAP_READY",
+                "EMBRIGHT_READY",
+                "PASTRO_READY",
+                "GCN_PRELIM_SENT",
+                "RAVEN_ALERT",
+                "DQR_REQUEST",
+                "HIGH_PROFILE",
+                "SIGNIF_LOCKED",
+                "LOW_SIGNIF_LOCKED"
+            ],
+            "links": {
+                "labels": "https://gracedb.ligo.org/api/superevents/MS240219r/labels/",
+                "logs": "https://gracedb.ligo.org/api/superevents/MS240219r/logs/",
+                "files": "https://gracedb.ligo.org/api/superevents/MS240219r/files/",
+                "self": "https://gracedb.ligo.org/api/superevents/MS240219r/",
+                "voevents": "https://gracedb.ligo.org/api/superevents/MS240219r/voevents/",
+                "emobservations": "https://gracedb.ligo.org/api/superevents/MS240219r/emobservations/"
+            },
+            "preferred_event_data": {
+                "submitter": "emfollow",
+                "created": "2024-02-19 17:07:29 UTC",
+                "group": "CBC",
+                "graceid": "M468089",
+                "pipeline": "gstlal",
+                "gpstime": 1392397465.57278,
+                "reporting_latency": 201.954407,
+                "instruments": "H1,L1",
+                "nevents": 2,
+                "offline": false,
+                "search": "MDC",
+                "far": 9.110699364861297e-14,
+                "far_is_upper_limit": false,
+                "likelihood": 36.99300601785969,
+                "labels": [
+                    "SKYMAP_READY",
+                    "EMBRIGHT_READY",
+                    "PASTRO_READY",
+                    "RAVEN_ALERT"
+                ],
+                "extra_attributes": {
+                    "SingleInspiral": [
+                        {
+                            "ifo": "H1",
+                            "end_time": 1392397465,
+                            "end_time_ns": 572779614
+                        },
+                        {
+                            "ifo": "L1",
+                            "end_time": 1392397465,
+                            "end_time_ns": 579668288
+                        }
+                    ]
+                },
+                "superevent": "MS240219r",
+                "links": {
+                    "neighbors": "https://gracedb.ligo.org/api/events/M468089/neighbors/",
+                    "log": "https://gracedb.ligo.org/api/events/M468089/log/",
+                    "emobservations": "https://gracedb.ligo.org/api/events/M468089/emobservation/",
+                    "files": "https://gracedb.ligo.org/api/events/M468089/files/",
+                    "labels": "https://gracedb.ligo.org/api/events/M468089/labels/",
+                    "self": "https://gracedb.ligo.org/api/events/M468089",
+                    "tags": "https://gracedb.ligo.org/api/events/M468089/tag/"
+                }
+            },
+            "pipeline_preferred_events": {
+                "gstlal": {
+                    "graceid": "M468089",
+                    "group": "CBC",
+                    "pipeline": "gstlal",
+                    "search": "MDC",
+                    "gpstime": 1392397465.57278,
+                    "far": 9.110699364861297e-14
+                }
+            }
+        },
+        {
             "superevent_id": "MS231103x",
             "gw_id": null,
             "category": "MDC",

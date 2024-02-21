@@ -26,10 +26,10 @@ print('Local cache path: ', client.get_cache_address(), '\n',
 send_server_request = False
 if send_server_request:
     # clear the local cached events
-    try:
-        os.remove(r'cached_events\local_superevents.json')
-    except:
-        pass
+    # try:
+    #     os.remove(r'cached_events\local_superevents.json')
+    # except:
+    #     pass
     # get an updated number of superevents
     # max_count = client.server_get_superevents_count()
     # print('Superevents max count: ', max_count)
@@ -38,8 +38,13 @@ if send_server_request:
     client.server_update_superevents(count=50, wait_t=1)
     # get {count} most recent superevents, wait {wait_t} s per request
 
+# sort the local database by creation time
+client.sort_localDB_by_creation_time()
+
+# load the sorted DB
 local_content = client.get_myLocalDB()
 # parse the database dictionary and print a summary of the dictionary
+
 levels = [client._get_superevents_key(), client._get_links_key()]
 dbProperty = parse_dict(local_content, 
                     levels=levels, 

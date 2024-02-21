@@ -2,10 +2,11 @@
 import json
 import warnings
 import os
+from typing import Union, Optional
 
 from gracedb_public.shared_configurations import Config, _re_local_dir
 
-from gracedb_public.dynamic import util
+from gracedb_public.dynamic import util, cache
 
 class Local_config(object):
     ''' Local database configurations (the parent of Grace Config).
@@ -29,6 +30,7 @@ class Local_config(object):
         # ::local file structure
         self.cache_address          : str = Config['cache_address']
         self.files_address          : str = Config['files_address']
+        self._temp_address          : str = Config['_temp_address']
         # ::local default inquiry chunk size
         self.local_inquiry_chunk    : int = Config['inquiry_chunk']
         self._re_inquiry_position()
@@ -93,7 +95,24 @@ class Local_config(object):
         self.local_inquiry_chunk    : int = Config['inquiry_chunk']
         self.inquiry_start_position : int = 0
 
-
+    def _sort_localDB(self, 
+                      db_key : Optional[str] = None) -> None:
+        ''' Sort local database by db_key.
+        ---------
+            Modified:   myLocalDB
+                        -> sorted by db_key
+        '''
+        if db_key is None: db_key = self._event_id_key
+        self.myLocalDB[self._superevents_key].sort(
+            key=lambda x: x[str(db_key)], reverse=True)
+        
+        # save sorted database in _temp directory before overwriting in cache
+        cache.cache_json(self.myLocalDB, self._temp_address, self.localDB_title)
+        # save in cache
+        cache.cache_json(self.myLocalDB, self.cache_address, self.localDB_title)
+        # remove _temp local DB if successful
+        os.remove('/'.join([self._temp_address, self.localDB_title]))
+            
     # Database variable getters and setters 
     # getter ---------------------------------------------
     # ::user getter
@@ -142,6 +161,10 @@ class Local_config(object):
     def _get_files_key(self) -> str:
         '''get current database files key'''
         return self._files_key 
+    
+    def _get_event_id_key(self) -> str: 
+        '''get current database event id key'''
+        return self._event_id_key
     
     
     # setter ---------------------------------------------
