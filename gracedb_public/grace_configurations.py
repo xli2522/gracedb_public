@@ -237,6 +237,15 @@ class Grace_config(Local_config):
 
         return
     
+    def sort_localDB_by_creation_time(self) -> None:
+        '''sort local database by creation time
+        ---------
+        Modified:    local database file
+        ---------
+        Wrapper for Local_config internal method _sort_localDB
+        '''
+        super()._sort_localDB('created')
+        
     ######################################################################
     # Database content getters
     # Wrapper
