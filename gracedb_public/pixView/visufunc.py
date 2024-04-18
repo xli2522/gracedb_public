@@ -16,13 +16,19 @@ from    astropy.wcs         import  WCS
 from    astropy.visualization.wcsaxes.frame \
                             import  EllipticalFrame
 
+# GraceDB-public custom pixView functions
+import  gracedb_public.pixView.util \
+                            as util
+
 # system/Python-built-in dependencies
 from    typing              import  Union, Optional
 import  time
+import  warnings
 
-def get_map(filename    : str, 
-            ext         : int   = 1,
-            validate    : bool  = True) -> np.array:
+def get_map_file(filename    : str, 
+                 index       : str   = 'nested',
+                 ext         : int   = 1,
+                 validate    : bool  = False) -> np.array:
     """
     Get the map from the fits file.
 
@@ -30,34 +36,30 @@ def get_map(filename    : str,
     ----------
     filename : str
         The path to the fits file. Can be an url or local address.
+    index : str, optional
+        The index of the map. Default is 'nested'.
     ext : int, optional
         The extension number of the map in the fits file. Default is 1.
-    validate : bool, optional
-        If True, validate the nside of the map. Default is True.
     Returns
     -------
     map : np.array
         The map.
     """
+    map_key = util.index_to_map_key(index)
 
     with fits.open(filename) as hdu:
-        map = hdu[ext].data['PROB']
-
-    if validate:
-        nside = hp.npix_to_nside(len(map))
-        hp.core._validate_nside(nside)
+        map = hdu[ext].data
     
     return map
 
-
 def mollview(map        : Optional[np.array]    =       None, 
-             nest       : bool                  =       False,
+             index      : str                   =       'nested',
              validate   : bool                  =       True,
              title      : Optional[str]         =       None,
              cmap       : str                   =       'viridis',
              interpolation: str                 =       'nearest',
              cbar       : bool                  =       True,
-             get_fig    : bool                  =       False,
+             get_fig    : bool                  =       True,
              save_fig   : bool                  =       False,
              save_path  : Optional[str]         =       None
              ) -> Optional[plt.Figure]:
@@ -69,8 +71,8 @@ def mollview(map        : Optional[np.array]    =       None,
     ----------
     map : 1D array
         An array containing the map to be plotted.
-    nest : bool, optional
-        If True, ordering scheme is NESTED. Default is False.
+    index : str, optional
+        The index of the map. Default is 'nested'.
     validate : bool, optional
         If True, validate the nside of the map. Default is True.
     title : str, optional
@@ -82,7 +84,7 @@ def mollview(map        : Optional[np.array]    =       None,
     cbar : bool, optional
         If True, show colorbar. Default is True.
     get_fig : bool, optional
-        If True, return the figure. Default is False.
+        If True, return the figure. Default is True.
     save_fig : bool, optional
         If True, save the figure. Default is False.
     save_path : str, optional
@@ -93,25 +95,43 @@ def mollview(map        : Optional[np.array]    =       None,
     fig : `~matplotlib.figure.Figure`
         The figure. Only returned if get_fig is True.
     """
-    if map is None:             
-        # if map is not provided, 
-        # or nside check goes wrong
-        # create a blank map to prevent error
-        map = np.zeros(12) + np.inf
+    if map is None: 
+        map = util.get_dummy_map_data()
+        index = 'nested'
+        warnings.warn('No map provided. Using dummy map for plotting.')
+    
+    if      index ==    'uniq'      : pass
+    elif    index ==    'nested'    : nested = True
+    elif    index ==    'ring'      : nested = False
+    else: 
+        raise ValueError('index should be either "uniq", "nested", or "ring".')
+    
+    map_key = util.index_to_map_key(index)
+    
+    map = util.to_map_key_pair(map, map_key) 
 
-    # imput map validation
-    if validate:
-        nside = hp.npix_to_nside(len(map))      # get nside of map
-        hp.core._validate_nside(nside)          # check if nside is valid
-
-    array, footprint = reproject_from_healpix((map, 'icrs'),
-                                           mollweide_header, nested=True)
-    # create figure
-    ax = plt.subplot(1,1,1, projection=WCS(mollweide_header),
+    if validate: util.validate_nside(map[map_key], index)
+    
+    if index == 'uniq':
+        level, ipix = hp.uniq_to_level_ipix(map[map_key])
+        nside = hp.level_to_nside(level)
+        ax = plt.subplot(1,1,1, projection="mollweide",  facecolor='LightCyan')
+        lon, lat = hp.healpix_to_lonlat(ipix, nside, order='nested')
+        lon_array, lat_array = [np.array(lon) -  np.pi, np.array(lat)]
+        fig = ax.scatter(lon_array, lat_array, 
+                                c=map[map_key], 
+                                marker='s', s=3, cmap=cmap)
+        
+    if index in ['nested', 'ring']:
+        ax = plt.subplot(1,1,1, projection=WCS(mollweide_header),
                     frame_class=EllipticalFrame)
-    fig = ax.imshow(array, cmap=cmap, interpolation=interpolation)
-    ax.coords.grid(color='white')
-    ax.coords['ra'].set_ticklabel(color='white')
+        array, footprint = reproject_from_healpix((map[map_key], 'icrs'),
+                                            mollweide_header, nested=nested)
+
+        fig = ax.imshow(array, cmap=cmap, interpolation=interpolation)
+        ax.coords.grid(color='white')
+        ax.coords['ra'].set_ticklabel(color='white')
+
     if title is None: title = 'Mollweide Projection'
     ax.set_title(title)
 
