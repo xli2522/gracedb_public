@@ -23,6 +23,7 @@ import  gracedb_public.pixView.util \
 # system/Python-built-in dependencies
 from    typing              import  Union, Optional
 import  time
+import  warnings
 
 def get_map_file(filename    : str, 
                  index       : str   = 'nested',
@@ -97,6 +98,7 @@ def mollview(map        : Optional[np.array]    =       None,
     if map is None: 
         map = util.get_dummy_map_data()
         index = 'nested'
+        warnings.warn('No map provided. Using dummy map for plotting.')
     
     if      index ==    'uniq'      : pass
     elif    index ==    'nested'    : nested = True
@@ -106,7 +108,7 @@ def mollview(map        : Optional[np.array]    =       None,
     
     map_key = util.index_to_map_key(index)
     
-    # map = util.to_map_key_pair(map, map_key) 
+    map = util.to_map_key_pair(map, map_key) 
 
     if validate: util.validate_nside(map[map_key], index)
     

@@ -1,7 +1,13 @@
-import astropy_healpix as hp
-import numpy as np
-import astropy.io.fits as fits
-from typing import Union, Dict
+# basic dependencies
+import  numpy as np
+
+# astropy healpix algorithms
+import  astropy_healpix as hp
+import  astropy.io.fits as fits
+
+# system/Python-built-in dependencies
+from    typing import Union, Dict
+import  warnings
 
 def index_to_map_key(index: str) -> str:
     """
@@ -60,35 +66,42 @@ def get_dummy_map_data() -> np.array:
     """
     return np.arange(12288)
 
-# def to_map_key_pair(map     : Union[fits.fitsrec.FITS_rec, 
-#                                     np.ndarray, dict], 
-#                     map_key   : str
-#                     ) ->      Union[fits.fitsrec.FITS_rec, 
-#                                     Dict[str, np.array]]:
-#     """
-#     Converts the given map and index into a map key pair if not already.
+def to_map_key_pair(map     : Union[fits.fitsrec.FITS_rec, 
+                                    np.ndarray, dict], 
+                    map_key : str
+                    ) ->      Union[fits.fitsrec.FITS_rec, 
+                                    Dict[str, np.array]]:
+    """
+    Converts the given map and index into a map key pair if not already.
     
-#     NOTE: The 'map key pair' is allowed to be a dictionary, or a FITS_rec object,
-#     or a numpy array.
+    NOTE: The 'map key pair' is allowed to be a dictionary, or a FITS_rec object,
+    or a numpy array.
 
-#     Parameters
-#     ----------
-#         map (Union[fits.fitsrec.FITS_rec, np.ndarray, dict]): The input map.
-#         map_key (str): The index used to generate the map key.
+    Parameters
+    ----------
+        map (Union[fits.fitsrec.FITS_rec, np.ndarray, dict]): The input map.
+        map_key (str): The index used to generate the map key.
 
-#     Returns
-#     -------
-#         Union[fits.fitsrec.FITS_rec, Dict[str, np.array]]: The map key pair.
+    Returns
+    -------
+        Union[fits.fitsrec.FITS_rec, Dict[str, np.array]]: The map key pair.
 
-#     Raises
-#     ------
-#         KeyError: If the map key is not found in the map.
-#     """
-#     # map_key = index_to_map_key(index)
+    Raises
+    ------
+        KeyError: If the map key is not found in the map.
+    """
+    # map_key = index_to_map_key(index)
     
-#     try: map[map_key]
-#     except IndexError: map = {map_key: map}
-#     except KeyError: raise KeyError(f'The map key {map_key} is not in the map.')
-#     else: map = {map_key: get_dummy_map_data()}
+    try: map[map_key]
+    except IndexError: 
+        map = {map_key: map}
+        warnings.warn('Expected an astropy.io.fits.fitsrec.FITS_rec object.\n'+\
+                f'A dictionary with key {map_key} was returned.')
+    except KeyError: raise KeyError(f'The map key {map_key} is not in the map.')
+    except: 
+        map = {map_key: get_dummy_map_data()}
+        warnings.warn('An unexpected error occurred while converting the map '+\
+                'to a map key pair. A dictionary containing a dummy map '+\
+                f' with key: {map_key} was returned instead.')
     
-#     return map
+    return map
