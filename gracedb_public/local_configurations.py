@@ -1,29 +1,34 @@
 # X. Li 2023
-import json
-import warnings
-import os
-from typing import Union, Optional
+# system/Python-built-in dependencies
+import  json
+import  warnings
+import  os
+from    typing          import  Union, Optional
 
-from gracedb_public.shared_configurations import Config, _re_local_dir
-
-from gracedb_public.dynamic import util, cache
+# GraceDB-public custom dependencies
+from    gracedb_public.shared_configurations    import Config, _re_local_dir
+from    gracedb_public.dynamic                  import util, cache
 
 class Local_config(object):
-    ''' Local database configurations (the parent of Grace Config).
-        -> Grace_configurations(Local_config)
-    ---------
+    ''' 
+    Local database configurations (the parent of Grace Config).
+        - Grace_configurations(Local_config)
+  
         Contains all local database and file access information.
         Deals with accessing local database and files.
         Methods for refreshing, re-ordering database, and files.
-    ---------
-        DB_load_success True if loaded successfully, False otherwise. 
+    
+    NOTE:
+        Sets DB_load_success to True if loaded successfully, False otherwise. 
     '''
 
     def __init__(self) -> None:
-        ''' Load local database.
-        ---------
-            NOTE:   DB_load_success True/False indicating 
-                    if the local database was loaded.
+        ''' 
+        Load local database.
+       
+        NOTE:   
+            DB_load_success True/False indicating 
+            if the local database was loaded.
         '''
         # ::local database title
         self.localDB_title          : str = Config['localDB_title']
@@ -48,29 +53,36 @@ class Local_config(object):
         self._re_my_localDB()        
         
         # other sessional variables
-        self._warn_skips = (os.path.dirname(__file__),)      # for warnings.warn()
+        # for warnings.warn() stacklevel
+        self._warn_skips = (os.path.dirname(__file__),)      
         
     # ::content/path refresh below
     def _re_localDB_path(self) -> None:
-        ''' Refresh local database path.
-        ---------
-            Modified:   localDB_path
-                        -> (new cache dir / new DB title)
-        ---------
-            NOTE:   temporary sessional DB path change, 
-                    will not affect system settings.
+        ''' 
+        Refresh local database path.
+        
+        Modified  
+        --------            
+        localDB_path -> (new cache dir / new DB title)
+    
+        NOTE:   temporary sessional DB path change, 
+                will not affect system settings.
         '''
         self.localDB_path : str = '/'.join([self.cache_address, 
                                             self.localDB_title]
                                         )
 
     def _re_my_localDB(self) -> bool:
-        ''' Refresh current local DB content.
-        ---------
-            Modified:   myLocalDB
-                        -> new DB .json content in dict
-        ---------
-            Return True if loaded successfully, False otherwise.
+        ''' 
+        Refresh current local DB content.
+        
+        Return
+        ------
+        Return True if loaded successfully, False otherwise.
+
+        Modified
+        --------   
+        myLocalDB -> new DB .json content in dict
         '''
         self._re_localDB_path()
         try:
@@ -85,22 +97,25 @@ class Local_config(object):
         return self.DB_load_success       
    
     def _re_inquiry_position(self) -> None:
-        ''' Refresh current inquiry position and inquiry chunk.
-        ---------
-            Modified:   inquiry_start_position
-                        -> reset to 0
-                        local_inquiry_chunk
-                        -> reset to default Config setting
+        ''' 
+        Refresh current inquiry position and inquiry chunk.
+       
+        Modified
+        --------
+        inquiry_start_position -> reset to 0
+        local_inquiry_chunk -> reset to default Config setting
         '''
         self.local_inquiry_chunk    : int = Config['inquiry_chunk']
         self.inquiry_start_position : int = 0
 
     def _sort_localDB(self, 
                       db_key : Optional[str] = None) -> None:
-        ''' Sort local database by db_key.
-        ---------
-            Modified:   myLocalDB
-                        -> sorted by db_key
+        ''' 
+        Sort local database by db_key.
+        
+        Modified
+        --------
+        myLocalDB -> sorted by db_key
         '''
         if db_key is None: db_key = self._event_id_key
         self.myLocalDB[self._superevents_key].sort(
@@ -170,37 +185,61 @@ class Local_config(object):
     # setter ---------------------------------------------
     # ::user setter
     def set_localDB_title(self, alt_title : str) -> None:
-        ''' Set local database titile/name; refresh local database path.
+        ''' 
+        Set local database titile/name; refresh local database path.
+        
+        Parameter
         ---------
-            NOTE:   Temporary sessional DB path change, 
-                    will not affect system settings.
+        alt_title : str
+            new local database title/name
+        
+        NOTE:   Temporary sessional DB path change, 
+                will not affect system settings.
         '''
         self.localDB_title = alt_title; self._re_localDB_path()
     
     def set_inquiry_position(self, alt_pos : int) -> None:
-        ''' Set current inquiry position.
+        ''' 
+        Set current inquiry position.
+        
+        Parameter
         ---------
-            NOTE:   Temporary inquiry position change,
+        alt_pos : int
+            new inquiry position
+
+        NOTE:   Temporary inquiry position change,
                     will be set to 0 once _re_inquiry_position() is called.
         '''
         self.inquiry_start_position = alt_pos
 
     def set_local_inquiry_chunk(self, alt_chunk : int) -> None:
-        ''' Set current inquiry chunk.
+        ''' 
+        Set current inquiry chunk.
             -> allow user toggle
+        
+        Parameter
         ---------
-            NOTE:   Temporary inquiry chunk change,
-                    will be set to default value once 
-                    _re_inquiry_position() is called.
+        alt_chunk : int
+            new inquiry chunk size
+
+        NOTE:   Temporary inquiry chunk change,
+                will be set to default value once 
+                _re_inquiry_position() is called.
         '''
         self.local_inquiry_chunk = alt_chunk
 
     # ::internal setter ------------------------------------
     def _set_myLocalDB(self, alt_db : dict) -> None:
-        ''' Replace local database content.
+        ''' 
+        Replace local database content.
             -> replace entire loaded .json database object
+        
+        Parameter
         ---------
-            NOTE:   Expects database loaded .json dict content object.
+        alt_db : dict
+            new local database content
+
+        NOTE:   Expects database loaded .json dict content object.
         '''
         self.myLocalDB = alt_db
         
@@ -231,9 +270,20 @@ class Local_config(object):
     # NOTE: considering the small number of items this program gets,
     #       use lists when possible for simplicity.
     def get_events_list(self, start : int = 0, chunk  : int = 15) -> list:
-        ''' get events list from int(start) to int(start+chunk)
+        ''' 
+        get events list from int(start) to int(start+chunk)
+        
+        Parameter
         ---------
-            Return selected event id list
+        start : int
+            start position
+        chunk : int
+            number of items to get
+
+        Return
+        ------
+        out : list 
+            selected event list
         '''
         out         : list = []
         selected    : dict = self.myLocalDB[
@@ -242,9 +292,18 @@ class Local_config(object):
         return out
     
     def get_event_links_list(self, ordered_event_id : int = 0) -> list:
-        ''' get event links list
+        ''' 
+        get event links list
+        
+        Parameter
         ---------
-            Return selected list
+        ordered_event_id : int
+            ordered event id
+
+        Return
+        ------
+        selected : list
+            selected event links list
         '''
         selected    : dict = self.myLocalDB[self._superevents_key][
                                             ordered_event_id][
@@ -252,9 +311,18 @@ class Local_config(object):
         return list(selected)
     
     def get_event_files_path(self, ordered_event_id : int = 0) -> str:
-        ''' get event files path
+        ''' 
+        get event files path
+        
+        Parameter
         ---------
-            Return files api path for specified event id.
+        ordered_event_id : int
+            ordered event id
+
+        Return
+        ------
+        selected : str
+            selected event files path
         '''
         selected    : str = self.myLocalDB[ self._superevents_key][
                                             ordered_event_id][
@@ -263,9 +331,17 @@ class Local_config(object):
         return selected
     
     def get_event_dict(self, ordered_event_id : int = 0) -> dict:
-        ''' get all event dict content
+        ''' 
+        get all event dict content
+        
+        Parameter
         ---------
-            Return full event dictionary content
+        ordered_event_id : int
+            ordered event id
+
+        Return
+        ------
+        a dictionary containing all event content for an ordered event id
         '''
         return self.myLocalDB[ self._superevents_key][ordered_event_id]
     
@@ -296,31 +372,43 @@ class Local_config(object):
     # Database status/statistics getters
     # getter ---------------------------------------------
     # ::user getter
-    def get_localDB_size(self) -> str:
-        ''' get local database size
-        ---------
-            Return local database size in MB
+    def get_localDB_size(self) -> float:
+        ''' 
+        get local database size
+        
+        Return
+        ------
+            local database size in MB
         '''
         return util.getSize(self.localDB_path)
     
-    def get_local_file_size(self) -> str:
-        ''' get local file size
-        ---------
-            Return local file size in MB
+    def get_local_file_size(self) -> float:
+        ''' 
+        get local file size
+
+        Return
+        ------
+            local file size in MB
         '''
         return util.get_dirSize(self.files_address)
     
     def get_local_number_of_files(self) -> int:
-        ''' get local number of files
-        ---------
-            Return local number of files
+        ''' 
+        get local number of files
+        
+        Return
+        ------
+            local number of files
         '''
         return util.getNumberofFiles(self.files_address)
     
     def get_localDB_number_of_events(self) -> int:
-        ''' get local number of events
-        ---------
-            Return local number of events
+        ''' 
+        get local number of events
+        
+        Return
+        ------
+            local number of events
         '''
         return len(self.myLocalDB[self._superevents_key])
     

@@ -1,33 +1,69 @@
 # X. Li 2023
-import requests
-import json
-import os
-from typing import Union
+# system/Python-built-in dependencies
+import  requests
+import  json
+import  os
+from    typing          import Union
 
-from gracedb_public.dynamic.util import re_punctuation, fixdir
-from gracedb_public.dynamic.cache import cache_json, cache_file
-from gracedb_public.dynamic.logging import logging
-from gracedb_public.shared_configurations import Config
+# gracedb_public custom dependencies
+from    gracedb_public.dynamic.util         import re_punctuation, fixdir
+from    gracedb_public.dynamic.cache        import cache_json, cache_file
+from    gracedb_public.dynamic.logging      import logging
+from    gracedb_public.\
+                shared_configurations       import Config
 
 @logging
 def get_response_dict(url : str, cache_dir : str = None) -> dict:
-    '''A wrapper for request.get() and saves the response in local directory.'''
-    files_list : dict = requests.get(url).json()
+    '''
+    A wrapper for request.get() and saves the response in local directory.
+    
+    Parameters
+    ----------
+    url : str
+        url to be requested
+    cache_dir : str
+        directory to store the response
+    
+    Returns
+    -------
+    data_dict
+        response dictionary containing the requested data
+    '''
+    data_dict : dict = requests.get(url).json()
 
     # cache data
     if cache_dir is not None:
         fixdir(cache_dir)
-        cache_json(files_list, cache_dir, 
+        cache_json(data_dict, cache_dir, 
                     url.translate(re_punctuation())+'.json')
 
-    return files_list
+    return data_dict
 
 @logging
 def get_file(url            : Union[str, list[str]], 
              cache_dir      : str   = Config['files_address'],
              offline_mode   : bool  = Config['offline_mode'],
-             local_files    : bool  = Config['local_files_first']) -> dict:
-    '''A wrapper for request.get() and saves the file in local directory'''
+             local_files    : bool  = Config['local_files_first']
+             ) -> dict[str, bool]:
+    '''
+    A wrapper for request.get() and saves the file in local directory
+    
+    Parameters
+    ----------
+    url : str
+        url to be requested 
+    cache_dir : str
+        directory to store the file
+    offline_mode : bool
+        whether to enable offline mode
+    local_files : bool
+        whether to check local cache first
+
+    Returns
+    -------
+    get_files_status
+        status of the files
+    '''
     file_urls = url if isinstance(url, list) else [str(url)]
     get_files_status = {}
     
@@ -73,6 +109,20 @@ def get_file(url            : Union[str, list[str]],
     return get_files_status
 
 def if_cached(url : str, cache_dir : str) -> bool:
-    '''Check if the file is cached'''
+    '''
+    Check if the file is cached
+
+    Parameters
+    ----------
+    url : str
+        url to be checked
+    cache_dir : str
+        directory to check
+
+    Returns
+    -------
+    bool
+        whether the file is cached
+    '''
     return os.path.exists(
             os.path.join(cache_dir, url.translate(re_punctuation())))

@@ -27,8 +27,7 @@ import  warnings
 
 def get_map_file(filename    : str, 
                  index       : str   = 'nested',
-                 ext         : int   = 1,
-                 validate    : bool  = False) -> np.array:
+                 ext         : int   = 1) -> np.array:
     """
     Get the map from the fits file.
 
@@ -40,12 +39,13 @@ def get_map_file(filename    : str,
         The index of the map. Default is 'nested'.
     ext : int, optional
         The extension number of the map in the fits file. Default is 1.
+    
     Returns
     -------
     map : np.array
         The map.
     """
-    map_key = util.index_to_map_key(index)
+    # map_key = util.index_to_map_key(index)
 
     with fits.open(filename) as hdu:
         map = hdu[ext].data

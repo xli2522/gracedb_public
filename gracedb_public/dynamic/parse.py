@@ -3,7 +3,24 @@
 def parse_dict( content_dict  : dict[str, str],
                 levels : list[str] = ['superevents','links'], 
                 event_key_all : bool = False) -> dict:
-    '''parse the superevents json dictionary for information structure'''
+    '''
+    parse the superevents json dictionary for information structure
+    
+    Parameters
+    ----------
+    content_dict : dict[str, str]
+        json dictionary to be parsed
+    levels : list[str]
+        levels of the dictionary to be parsed
+    event_key_all : bool
+        whether to include all event keys
+
+    Returns
+    -------
+    dict
+        parsed dictionary
+        - {'Database':L1, levels[0]:L2, levels[1]:L3}
+    '''
     L1 = list(content_dict.keys())
     # expect ['numRows', 'superevents', 'links']
 

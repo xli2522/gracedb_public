@@ -1,17 +1,37 @@
 # X. Li 2023
-import string
-import os
-import shutil
+# This file contains utility functions for the gracedb_public package
+
+# system/Python-built-in dependencies   
+import  os
+import  shutil
+from    typing  import Union
 
 def re_punctuation() -> str:
-    '''return the translation method with all punctuations removed'''
+    '''
+    return the translation method with all punctuations removed
+    
+    Returns
+    -------
+    str
+        translation method
+    '''
     # string.punctuation -> r"""!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"""
     # keep '.' for file extension
     return str.maketrans('', '', r"""!"#$%&'()*+,-/:;<=>?@[\]^_`{|}~""")
 
-def fixdir(path : [str, list]) -> None:
-    ''' create path if not already
-    path: tuple or list'''
+def fixdir(path : Union[str, list]) -> None:
+    ''' 
+    create path if not already
+
+    Parameters
+    ----------
+    path : str, list
+        path to be created
+
+    Returns
+    -------
+    None
+    '''
     if isinstance(path, str):
         if not os.path.exists(path):
             os.makedirs(path)
@@ -23,9 +43,19 @@ def fixdir(path : [str, list]) -> None:
         raise TypeError('Only str, list, and tuple are allowed')
     return
 
-def removedir(path : [str, list]) -> None:
-    ''' remove dir if not already
-    path: tuple or list'''
+def removedir(path : Union[str, list]) -> None:
+    ''' 
+    remove dir if not already
+    
+    Parameters
+    ----------
+    path : str, list
+        path to be removed
+
+    Returns
+    -------
+    None
+    '''
     if isinstance(path, str):
         if os.path.exists(path):
             shutil.rmtree(path)
@@ -37,9 +67,19 @@ def removedir(path : [str, list]) -> None:
         raise TypeError('Only str, list, and tuple are allowed')
     return
 
-def cleardir(path : [str, list]) -> None:
-    ''' clear dir if not already
-    path: tuple or list'''
+def cleardir(path : Union[str, list]) -> None:
+    ''' 
+    clear dir if not already
+    
+    Parameters
+    ----------
+    path : str, list
+        path to be cleared
+
+    Returns
+    -------
+    None
+    '''
     if isinstance(path, str):
         if os.path.exists(path):
             for f in os.listdir(path):
@@ -53,16 +93,38 @@ def cleardir(path : [str, list]) -> None:
         raise TypeError('Only str, list, and tuple are allowed')
     return
 
-def getSize(path : str) -> str:
-    ''' return the size of the file in MB
-    path: str'''
+def getSize(path : str) -> float:
+    ''' 
+    return the size of the file in MB
+    
+    Parameters
+    ----------
+    path : str
+        path to the file
+
+    Returns
+    -------
+    size : float
+        size of the file in MB
+    '''
     size = os.path.getsize(path)
     size = size / 1024 / 1024
     return size
 
-def get_dirSize(path : str) -> str:
-    ''' return the size of the directory in MB
-    path: str'''
+def get_dirSize(path : str) -> float:
+    ''' 
+    return the size of the directory in MB
+
+    Parameters
+    ----------
+    path : str
+        path to the directory
+
+    Returns
+    -------
+    total : float
+        size of the directory in MB
+    '''
     total = 0
     for dirpath, dirnames, filenames in os.walk(path):
         for f in filenames:
@@ -71,6 +133,17 @@ def get_dirSize(path : str) -> str:
     return total
 
 def getNumberofFiles(path : str) -> int:
-    ''' return the number of files in the directory
-    path: str'''
+    ''' 
+    return the number of files in the directory
+
+    Parameters
+    ----------
+    path : str
+        path to the directory
+
+    Returns
+    -------
+    int
+        number of files in the directory
+    '''
     return len(os.listdir(path))

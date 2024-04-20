@@ -1,26 +1,34 @@
 # X. Li 2023
-import requests
-import time
-import warnings
+# basic dependencies
+from    tqdm import tqdm
 
-from tqdm import tqdm
+# GraceDB-public custom dependencies
+from    gracedb_public.shared_configurations    import Config, _re_local_dir
+from    gracedb_public.local_configurations     import Local_config
+from    gracedb_public.dynamic.cache            import (cache_json, 
+                                                        _append_local_json)
+from    gracedb_public.dynamic.util             import (re_punctuation, 
+                                                        fixdir, 
+                                                        removedir)
+from    gracedb_public.dynamic.logging          import logging
 
-from gracedb_public.shared_configurations import Config, _re_local_dir
-from gracedb_public.local_configurations import Local_config
-from gracedb_public.dynamic.cache import cache_json, _append_local_json
-from gracedb_public.dynamic.util import re_punctuation, fixdir, removedir
-from gracedb_public.dynamic.logging import logging
+# system/Python-built-in dependencies
+import  requests
+import  time
+import  warnings
+from    typing import Union, Optional
 
 class Grace_config(Local_config):
-    ''' GraceDB database configurations (both server and local)
+    ''' 
+    GraceDB database configurations (both server and local)
         Grace_config --> user and server interactions
         Grace_config is based on Local_config
-    ---------    
-        Initializes local configurations automatically.
-    ---------
-    Details:
-        Server interaction part --> obtain local copies of the database
-        Local  interaction part --> access and process data
+    
+    Initializes local configurations automatically.
+    
+    NOTE:
+    Server interaction part --> obtain local copies of the database
+    Local  interaction part --> access and process data
     '''
     def __init__(self) -> None:
         super().__init__()
@@ -140,12 +148,23 @@ class Grace_config(Local_config):
         self._local_files_first = mode
         
     # internal event and file information
-    def _set_myFile_path(self, alt_path : str) -> None:
-        ''' set temporary path to current file; should not use 
-            Will be used when local cache check and update function is enabled.
-        ---------
-            NOTE:   updating file path should be done through refresh
-                    myFile path function not set myFile path.
+    def _set_myFile_path(self, alt_path: str) -> None:
+        '''
+        Set the temporary path to the current file. This method should not 
+        be used directly. It will be used when the local cache check and 
+        update function is enabled.
+
+        Note:
+        - Updating the file path should be done through the 
+        `refresh_myFile_path` function, not by directly setting the file path.
+
+        Parameters
+        ----------
+        alt_path (str): The alternative path to set as the temporary file path.
+
+        Returns
+        -------
+        None
         '''
         self._myFile_path = alt_path
         
@@ -177,10 +196,25 @@ class Grace_config(Local_config):
     # NOTE: [FEATURE] sleep dec?
     @logging
     def server_update_superevents(self, 
-                           start  : int = None, 
-                           count  : int = None, 
-                           wait_t : [int, float] = 1) -> None:
-        '''get updated superevents information from gracedb server'''
+                           start  : Optional[int]       = None, 
+                           count  : Optional[int]       = None, 
+                           wait_t : Union[int, float]   = 1) -> None:
+        '''
+        Update the superevents information from the gracedb server.
+
+        Parameters
+        ----------
+        start : int, optional 
+            The starting index of the superevents to update.
+        count : int, optional
+            The number of superevents to update.
+        wait_t : Union[int, float], optional
+            The time to wait between each request. Default is 1.
+        
+        Returns
+        -------
+        None
+        '''
         max_count : int = self.server_get_superevents_count()
         if isinstance(count, (int, float)) and count <= max_count:
             count = int(count)
@@ -238,11 +272,13 @@ class Grace_config(Local_config):
         return
     
     def sort_localDB_by_creation_time(self) -> None:
-        '''sort local database by creation time
-        ---------
-        Modified:    local database file
-        ---------
+        '''
         Wrapper for Local_config internal method _sort_localDB
+            - sort local database by creation time
+        
+        Modified
+        --------    
+        local database file
         '''
         super()._sort_localDB('created')
         
@@ -252,38 +288,68 @@ class Grace_config(Local_config):
     # getter ---------------------------------------------
     # ::user getter
     def get_events_list(self, start : int = 0, chunk  : int = 15) -> list:
-        ''' get events list from int(start) to int(start+chunk)
-        ---------
-            Return selected event id list
-        ---------
-            Wrapper for Local_config internal method get_events_list
+        ''' 
+        Wrapper for Local_config internal method get_events_list 
+            - get events list from int(start) to int(start+chunk)
+        
+        Parameters
+        ----------
+            start : int
+                start index of the list
+            chunk : int
+                number of events to be listed
+        
+        Returns
+        -------
+            list
         '''
         return super().get_events_list(start, chunk)
     
     def get_event_links_list(self, ordered_event_id : int = 0) -> list:
-        ''' get event links list
-        ---------
-            Return selected list
-        ---------
-            Wrapper for Local_config internal method get_event_links_list
+        ''' 
+        Wrapper for Local_config internal method get_event_links_list
+            - get event links list
+        
+        Parameters
+        ----------
+            ordered_event_id : int
+                ordered event id
+        
+        Returns
+        -------
+            list
         '''
         return super().get_event_links_list(ordered_event_id)
     
     def get_event_files_path(self, ordered_event_id : int = 0) -> str:
-        ''' get event files path
-        ---------
-            Return files api path for specified event id.
-        ---------
-            Wrapper for Local_config internal method get_event_files_path
+        ''' 
+        Wrapper for Local_config internal method get_event_files_path
+            - get event files path
+        
+        Parameters
+        ----------
+            ordered_event_id : int
+                ordered event id
+        
+        Returns
+        -------
+            str
         '''
         return super().get_event_files_path(ordered_event_id)
     
     def get_event_dict(self, ordered_event_id : int = 0) -> dict:
-        ''' get all event dict content
-        ---------
-            Return full event dictionary content
-        ---------
-            Wrapper for Local_config internal method get_event_dict
+        ''' 
+        Wrapper for Local_config internal method get_event_dict
+            - get all event dict content
+       
+        Parameters
+        ----------
+            ordered_event_id : int
+                ordered event id
+        
+        Returns
+        -------
+            dict
         '''
         return super().get_event_dict(ordered_event_id)
     
@@ -291,11 +357,11 @@ class Grace_config(Local_config):
     # Database status/statistics getters
     # localDB getters ---------------------------------------------
     # ::user getter
-    def get_localDB_size(self) -> str:
+    def get_localDB_size(self) -> float:
         '''return the size of the local database in MB'''
         return super().get_localDB_size()
     
-    def get_local_file_size(self) -> str:
+    def get_local_file_size(self) -> float:
         '''return the size of the local files in MB'''
         return super().get_local_file_size()
     
