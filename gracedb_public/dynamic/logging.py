@@ -1,14 +1,30 @@
 # X. Li 2023
-import functools
-from datetime import datetime
-import os
 
-from gracedb_public.shared_configurations import Config
-from gracedb_public.dynamic.util import fixdir
+# system/Python-built-in dependencies
+import  functools
+from    datetime        import datetime
+import  os
 
-def logging(func : object) -> any:
+# gracedb_public custom dependencies
+from gracedb_public.shared_configurations   import Config
+from gracedb_public.dynamic.util            import fixdir
+
+def logging(func : object) -> function:
+    '''
+    log the function name, time, and inputs
+
+    Parameters
+    ----------
+    func : object
+        function to be logged
+
+    Returns
+    -------
+    function
+        return of the function
+    '''
     @functools.wraps(func)
-    def wrapper(*args, **kwargs) -> any:
+    def wrapper(*args, **kwargs) -> function:
         # Log the function name and arguments
         fixdir(Config['_log_address'])
         file_path : str = '/'.join([Config['_log_address'], 'log.txt'])
