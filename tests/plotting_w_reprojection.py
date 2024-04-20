@@ -7,7 +7,7 @@ filename_ligo = \
         r'https://gracedb.ligo.org/api/superevents/MS240410u/'+\
         r'files/bayestar.fits.gz,1'
 
-skymap = pixView.get_map_file(filename_ligo, index='nested', validate=True) 
+skymap = pixView.get_map_file(filename_ligo, index='nested') 
 fig = pixView.mollview( skymap, index='nested', title='Test Mollweide', 
                         get_fig=False, 
                         save_fig=True, 
@@ -18,7 +18,7 @@ plt.close()
 multiorder_ligo = \
         r'https://gracedb.ligo.org/api/superevents/'+\
         r'MS240410u/files/bayestar.multiorder.fits,1'
-skymap = pixView.get_map_file(multiorder_ligo, index='uniq', validate=True) 
+skymap = pixView.get_map_file(multiorder_ligo, index='uniq') 
 skymap = skymap['UNIQ']#['UNIQ']
 fig = pixView.mollview( skymap, index='uniq', title='Test Mollweide Multiorder', 
                         get_fig=False, 
