@@ -53,14 +53,14 @@ def cleardir(path : [str, list]) -> None:
         raise TypeError('Only str, list, and tuple are allowed')
     return
 
-def getSize(path : str) -> str:
+def getSize(path : str) -> float:
     ''' return the size of the file in MB
     path: str'''
     size = os.path.getsize(path)
     size = size / 1024 / 1024
     return size
 
-def get_dirSize(path : str) -> str:
+def get_dirSize(path : str) -> float:
     ''' return the size of the directory in MB
     path: str'''
     total = 0

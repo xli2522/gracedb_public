@@ -296,14 +296,14 @@ class Local_config(object):
     # Database status/statistics getters
     # getter ---------------------------------------------
     # ::user getter
-    def get_localDB_size(self) -> str:
+    def get_localDB_size(self) -> float:
         ''' get local database size
         ---------
             Return local database size in MB
         '''
         return util.getSize(self.localDB_path)
     
-    def get_local_file_size(self) -> str:
+    def get_local_file_size(self) -> float:
         ''' get local file size
         ---------
             Return local file size in MB
