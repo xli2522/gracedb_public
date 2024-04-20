@@ -21,12 +21,12 @@ from    typing import Union, Optional
 class Grace_config(Local_config):
     ''' 
     GraceDB database configurations (both server and local)
-    Grace_config --> user and server interactions
-    Grace_config is based on Local_config
+        Grace_config --> user and server interactions
+        Grace_config is based on Local_config
     
     Initializes local configurations automatically.
     
-    Details:
+    NOTE:
     Server interaction part --> obtain local copies of the database
     Local  interaction part --> access and process data
     '''

@@ -1,7 +1,10 @@
 # X. Li 2023
-import string
-import os
-import shutil
+# This file contains utility functions for the gracedb_public package
+
+# system/Python-built-in dependencies   
+import  os
+import  shutil
+from    typing  import Union
 
 def re_punctuation() -> str:
     '''return the translation method with all punctuations removed'''
@@ -9,7 +12,7 @@ def re_punctuation() -> str:
     # keep '.' for file extension
     return str.maketrans('', '', r"""!"#$%&'()*+,-/:;<=>?@[\]^_`{|}~""")
 
-def fixdir(path : [str, list]) -> None:
+def fixdir(path : Union[str, list]) -> None:
     ''' create path if not already
     path: tuple or list'''
     if isinstance(path, str):
@@ -23,7 +26,7 @@ def fixdir(path : [str, list]) -> None:
         raise TypeError('Only str, list, and tuple are allowed')
     return
 
-def removedir(path : [str, list]) -> None:
+def removedir(path : Union[str, list]) -> None:
     ''' remove dir if not already
     path: tuple or list'''
     if isinstance(path, str):
@@ -37,7 +40,7 @@ def removedir(path : [str, list]) -> None:
         raise TypeError('Only str, list, and tuple are allowed')
     return
 
-def cleardir(path : [str, list]) -> None:
+def cleardir(path : Union[str, list]) -> None:
     ''' clear dir if not already
     path: tuple or list'''
     if isinstance(path, str):

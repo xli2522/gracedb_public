@@ -41,7 +41,7 @@ Config : dict[str, any] = {
         }
 
 def _re_local_dir() -> None:
-    # refresh local directories
+    '''refresh local directories'''
     dirs : list = [
                 Config[ 'cache_address'  ], 
                 Config[ 'files_address'  ], 
