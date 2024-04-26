@@ -139,7 +139,7 @@ def mollview(map        : Optional[np.array]    =       None,
     if cbar: plt.colorbar(fig, orientation='horizontal')
     if save_fig: 
         if save_path is None: save_path = str(time.time())+'.png'
-        else: plt.savefig(save_path)
+        plt.savefig(save_path)
     if get_fig: return ax.figure
     
     return 
