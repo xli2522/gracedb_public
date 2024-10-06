@@ -9,7 +9,7 @@ import  os
 from gracedb_public.shared_configurations   import Config
 from gracedb_public.dynamic.util            import fixdir
 
-def logging(func : object) -> function:
+def logging(func : object):
     '''
     log the function name, time, and inputs
 
@@ -24,7 +24,7 @@ def logging(func : object) -> function:
         return of the function
     '''
     @functools.wraps(func)
-    def wrapper(*args, **kwargs) -> function:
+    def wrapper(*args, **kwargs):
         # Log the function name and arguments
         fixdir(Config['_log_address'])
         file_path : str = '/'.join([Config['_log_address'], 'log.txt'])

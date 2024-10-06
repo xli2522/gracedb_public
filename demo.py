@@ -95,8 +95,8 @@ print(json.dumps(files_status, indent=4))
 # get the first file path
 filename_ligo = \
 r'https://gracedb.ligo.org/api/superevents/MS240410u/files/bayestar.fits.gz,1'
-skymap = pixView.get_map(filename_ligo) 
-fig = pixView.mollview( skymap, nest=False, 
+skymap = pixView.get_map_file(filename_ligo, index='nested') 
+fig = pixView.mollview( skymap, index='nested', 
                         title='Test Mollweide', 
                         get_fig=False, 
                         save_fig=True, 
